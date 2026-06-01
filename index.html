@@ -240,22 +240,13 @@
       height: 64px;
     }
     .logo {
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: var(--color-dark);
-      letter-spacing: -0.5px;
       display: flex;
       align-items: center;
-      gap: 10px;
     }
-    .logo-mark {
-      width: 36px; height: 36px;
-      background: var(--color-primary);
-      border-radius: var(--radius-sm);
-      display: flex; align-items: center; justify-content: center;
-      color: var(--color-white);
-      font-size: 1rem;
-      font-weight: 700;
+    .logo-img {
+      height: 40px;
+      width: auto;
+      display: block;
     }
 
     /* Desktop Nav */
@@ -465,7 +456,10 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-deep-green) 50%, var(--color-teal) 100%);
+      background-image: url('https://github.com/rrnollab25-2026/my-site/blob/main/hero-bg.jpg?raw=true');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       z-index: 0;
     }
     .hero-bg::after {
@@ -970,8 +964,7 @@
     <div class="header-tier1">
       <div class="container">
         <a href="index.html" class="logo">
-          <span class="logo-mark">SP</span>
-          <span>Suncoast Plumbing</span>
+          <img src="https://github.com/rrnollab25-2026/my-site/blob/main/logo.png?raw=true" alt="Suncoast Plumbing of Florida, Inc Logo" class="logo-img">
         </a>
 
         <!-- Desktop Navigation -->
