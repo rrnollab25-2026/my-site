@@ -567,7 +567,7 @@
       margin-bottom: 10px;
     }
     .service-card p {
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: var(--color-secondary);
       margin-bottom: 16px;
       line-height: 1.55;
@@ -591,10 +591,28 @@
       display: inline-block;
       background: var(--color-light);
       color: var(--color-secondary);
-      font-size: 0.82rem;
+      font-size: 1rem;
       font-weight: 600;
       padding: 4px 10px;
       border-radius: var(--radius-sm);
+    }
+    .area-pill {
+      display: inline-block;
+      background: var(--color-light);
+      color: var(--color-dark);
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--color-border);
+      transition: background var(--transition), border-color var(--transition), transform var(--transition);
+      cursor: default;
+    }
+    .area-pill:hover {
+      background: var(--color-primary);
+      color: var(--color-white);
+      border-color: var(--color-primary);
+      transform: translateY(-2px);
     }
     .service-link {
       display: inline-flex;
@@ -629,7 +647,7 @@
     .standard-col li {
       position: relative;
       padding-left: 28px;
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: var(--color-dark);
       line-height: 1.5;
     }
@@ -679,7 +697,7 @@
       color: var(--color-primary);
     }
     .cta-left p {
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: rgba(255,255,255,0.85);
       margin-bottom: 12px;
       line-height: 1.6;
@@ -792,7 +810,7 @@
       margin-bottom: 4px;
     }
     .factor-text p {
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: var(--color-secondary);
       line-height: 1.5;
     }
@@ -874,7 +892,7 @@
     }
     .emergency-promise {
       color: rgba(255,255,255,0.8);
-      font-size: 0.95rem;
+      font-size: 1rem;
       max-width: 640px;
       margin: 0 auto 32px;
       line-height: 1.6;
@@ -900,7 +918,7 @@
     }
     .nap-item p, .nap-item address {
       font-style: normal;
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: rgba(255,255,255,0.85);
       line-height: 1.6;
     }
@@ -952,6 +970,7 @@
       .emergency h2 { font-size: 2.2rem; }
     }
   </style>
+<base target="_blank">
 <base target="_blank">
 </head>
 <body>
@@ -1409,17 +1428,53 @@
 
       <h3>Exact Service Area</h3>
       <p>We serve the following Pasco County communities and surrounding areas:</p>
-      <ul class="city-list">
-        <li>Aripeka</li><li>Bayonet Point</li><li>Beacon Square</li><li>Connerton</li>
-        <li>Crystal Springs</li><li>Dade City</li><li>Dade City North</li><li>Elfers</li>
-        <li>Heritage Pines</li><li>Holiday</li><li>Hudson</li><li>Jasmine Estates</li>
-        <li>Key Vista</li><li>Lacoochee</li><li>Land O Lakes</li><li>Meadow Oaks</li>
-        <li>Moon Lake</li><li>New Port Richey</li><li>New Port Richey East</li><li>Odessa</li>
-        <li>Pasadena Hills</li><li>Port Richey</li><li>Quail Ridge</li><li>River Ridge</li>
-        <li>San Antonio</li><li>Shady Hills</li><li>St. Leo</li><li>Trilby</li>
-        <li>Trinity</li><li>Wesley Chapel</li><li>Zephyrhills</li><li>Zephyrhills North</li>
-        <li>Zephyrhills South</li><li>Zephyrhills West</li>
-      </ul>
+      <div class="service-areas" style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:32px;">
+        <span class="area-pill">Bayonet Point</span>
+        <span class="area-pill">Beacon Square</span>
+        <span class="area-pill">Connerton</span>
+        <span class="area-pill">Crystal Springs</span>
+        <span class="area-pill">Dade City</span>
+        <span class="area-pill">Dade City North</span>
+        <span class="area-pill">Elfers</span>
+        <span class="area-pill">Heritage Pines</span>
+        <span class="area-pill">Holiday</span>
+        <span class="area-pill">Hudson</span>
+        <span class="area-pill">Jasmine Estates</span>
+        <span class="area-pill">Key Vista</span>
+        <span class="area-pill">Lacoochee</span>
+        <span class="area-pill">Land O Lakes</span>
+        <span class="area-pill">Meadow Oaks</span>
+        <span class="area-pill">Moon Lake</span>
+        <span class="area-pill">New Port Richey</span>
+        <span class="area-pill">New Port Richey East</span>
+        <span class="area-pill">Odessa</span>
+        <span class="area-pill">Pasadena Hills</span>
+        <span class="area-pill">Port Richey</span>
+        <span class="area-pill">Quail Ridge</span>
+        <span class="area-pill">River Ridge</span>
+        <span class="area-pill">San Antonio</span>
+        <span class="area-pill">Shady Hills</span>
+        <span class="area-pill">St. Leo</span>
+        <span class="area-pill">Trilby</span>
+        <span class="area-pill">Trinity</span>
+        <span class="area-pill">Wesley Chapel</span>
+        <span class="area-pill">Zephyrhills</span>
+        <span class="area-pill">Zephyrhills North</span>
+        <span class="area-pill">Zephyrhills South</span>
+        <span class="area-pill">Zephyrhills West</span>
+      </div>
+      <div style="width:100%; border-radius:var(--radius-md); overflow:hidden; margin-bottom:32px; border:1px solid var(--color-border);">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224199.4990654736!2d-82.83409905!3d28.3232086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b1c5b5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2sPasco%20County%2C%20FL!5e0!3m2!1sen!2sus!4v1717171717171!5m2!1sen!2sus" 
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Pasco County Florida Service Area Map">
+        </iframe>
+      </div>
       <p class="closing-para">Whether you're in a Wesley Chapel subdivision with polybutylene pipes or a Land O Lakes ranch on septic, we arrive with the right tools and local knowledge.</p>
     </div>
   </section>
@@ -1430,12 +1485,7 @@
   <section class="emergency" aria-label="Emergency Plumbing">
     <div class="container">
       <h2>24/7 Emergency Plumber in Pasco County — Call 727-453-8900</h2>
-      <p>Burst pipe at midnight? Sewage backup on Sunday? Our emergency team is stationed in Pasco County for same-day dispatch.</p>
-      <div class="benefit-boxes">
-        <div class="benefit-box">60–90 Minute Response Guarantee</div>
-        <div class="benefit-box">Immediate Phone Guidance to Stop Flooding While En Route</div>
-        <div class="benefit-box">Insurance-Ready Water Damage Documentation</div>
-      </div>
+      <p>Our emergency team is stationed in Pasco County for same-day dispatch.</p>
       <h3>Our Promise to Every Homeowner</h3>
       <p class="emergency-promise">Suncoast Plumbing of Florida, Inc is family-owned, licensed under CFC 1430728, and fully insured & bonded. We use only PEX-A or Copper Type L materials. We handle all permits. And we don't leave until you're satisfied.</p>
       <a href="tel:727-453-8900" class="btn btn-primary">Call 727-453-8900 Now</a>
