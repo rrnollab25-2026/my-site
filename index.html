@@ -1,2163 +1,1506 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emergency Plumber Land O Lakes FL — 24/7 Same-Day Response | Suncoast Plumbing</title>
-  <meta name="description" content="Emergency plumber Land O Lakes FL — 24/7 live dispatch, 60-90 min response. Burst pipes, sewage backup, water heater failure. Licensed CFC 1430728. Call 727-453-8900.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;720&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plumber Land O Lakes FL | 24/7 Emergency Plumbing | Suncoast Plumbing of Florida</title>
+<meta name="description" content="Licensed plumber in Land O Lakes FL serving Pasco County. 24/7 emergency plumbing, leak detection, drain cleaning, water heaters, repiping. Call 727-453-8900.">
 
-  <!-- JSON-LD Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Service",
-        "serviceType": "Emergency Plumbing",
-        "areaServed": {
-          "@type": "Place",
-          "name": "Land O Lakes, FL",
-          "containedInPlace": {
-            "@type": "AdministrativeArea",
-            "name": "Pasco County"
-          }
-        },
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Suncoast Plumbing of Florida, Inc",
-          "telephone": "727-453-8900",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Land O Lakes",
-            "addressRegion": "FL"
-          }
-        },
-        "availableChannel": [
-          {
-            "@type": "ServiceChannel",
-            "serviceType": "Telephone",
-            "servicePhone": {
-              "@type": "ContactPoint",
-              "telephone": "727-453-8900",
-              "contactType": "emergency",
-              "availableLanguage": ["English", "Spanish"]
-            }
-          },
-          {
-            "@type": "ServiceChannel",
-            "serviceType": "Web"
-          }
-        ]
-      },
-      {
-        "@type": "LocalBusiness",
-        "name": "Suncoast Plumbing of Florida, Inc",
-        "telephone": "727-453-8900",
-        "url": "https://www.suncoastplumbingfl.com",
-        "sameAs": ["https://www.suncoastplumbingfl.com"],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Emergency Repair Services",
-          "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Burst Pipe Repair" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Slab Leak Detection" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sewage Backup Cleanup" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Heater Emergency Repair" } }
-          ]
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much does an emergency plumber cost in Land O Lakes?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Suncoast Plumbing charges a 79-dollar inspection fee that credits to your repair. We provide flat-rate estimates upfront with multiple repair options before any work begins."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What should I do while waiting for the emergency plumber?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Shut off the main water supply if safe. If the valve is broken, call us immediately at 727-453-8900 and we will guide you to the street curb stop. Move valuables away from water and do not use electrical devices near standing water."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you handle sewage backup emergencies in Pasco County?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Sewage backup is a critical health hazard. We answer 24/7, dispatch within 60 to 90 minutes, and use containment barriers and hospital-grade disinfectants to prevent contamination spread."
-            }
-          }
-        ]
-      }
-    ]
+<style>
+/* ============================================
+   CSS CUSTOM PROPERTIES — COLOR PALETTE
+   ============================================ */
+:root {
+  --color-primary:   #C99366;
+  --color-secondary: #726150;
+  --color-dark:      #001805;
+  --color-deep-green:#184129;
+  --color-teal:      #005240;
+  --color-white:     #ffffff;
+  --color-cream:     #f6f4f1;
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --container: 1200px;
+  --radius: 8px;
+  --radius-pill: 50px;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family: var(--font-main);
+  color: var(--color-dark);
+  line-height:1.65;
+  background: var(--color-white);
+  overflow-x:hidden;
+}
+
+.container {
+  width:100%;
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 24px;
+}
+
+img { max-width:100%; display:block; }
+a { color:inherit; text-decoration:none; }
+ul { list-style:none; }
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeInUp {
+  from { opacity:0; transform:translateY(30px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity:0; }
+  to   { opacity:1; }
+}
+@keyframes pulseDot {
+  0%,100% { transform:scale(1); }
+  50%     { transform:scale(1.5); }
+}
+@keyframes slideDown {
+  from { transform:translateY(-20px); }
+  to   { transform:translateY(0); }
+}
+.animate { animation:fadeInUp 0.7s ease forwards; }
+.animate-delay-1 { animation-delay:0.1s; opacity:0; }
+.animate-delay-2 { animation-delay:0.2s; opacity:0; }
+.animate-delay-3 { animation-delay:0.3s; opacity:0; }
+
+/* ============================================
+   HEADER — STICKY TWO-TIER
+   ============================================ */
+.header-sticky {
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:var(--color-white);
+  border-bottom:2px solid var(--color-primary);
+}
+
+/* Tier 1 — Main Navigation */
+.header-tier-1 { height:75px; }
+.header-tier-1 .container {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:100%;
+}
+.logo img { height:70px; width:auto; }
+
+.desktop-nav {
+  display:none;
+  align-items:center;
+  gap:32px;
+}
+.desktop-nav a {
+  font-weight:600;
+  font-size:15px;
+  color:var(--color-dark);
+  transition:color 0.2s;
+  position:relative;
+}
+.desktop-nav a:hover { color:var(--color-primary); }
+.desktop-nav .dropdown { position:relative; }
+.dropdown-menu {
+  position:absolute;
+  top:calc(100% + 10px);
+  left:0;
+  background:var(--color-white);
+  border:2px solid var(--color-primary);
+  border-radius:var(--radius);
+  min-width:280px;
+  padding:8px 0;
+  transform:translateY(10px);
+  visibility:hidden;
+  transition:transform 0.25s ease, visibility 0.25s;
+}
+.dropdown:hover .dropdown-menu {
+  transform:translateY(0);
+  visibility:visible;
+}
+.dropdown-menu a {
+  display:block;
+  padding:10px 20px;
+  font-size:14px;
+  font-weight:500;
+}
+.dropdown-menu a:hover {
+  background:var(--color-cream);
+  color:var(--color-dark);
+}
+
+.hamburger {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:5px;
+  width:40px;
+  height:40px;
+  background:none;
+  border:none;
+  cursor:pointer;
+}
+.hamburger span {
+  display:block;
+  width:28px;
+  height:3px;
+  background:var(--color-dark);
+  border-radius:2px;
+  transition:0.3s;
+}
+
+/* Tier 2 — Location & CTA Bar */
+.header-tier-2 {
+  height:65px;
+  background:var(--color-cream);
+  border-top:1px solid var(--color-primary);
+}
+.header-tier-2 .container {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:100%;
+}
+.location {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight:600;
+  font-size:15px;
+  color:var(--color-dark);
+}
+.location svg {
+  width:18px;
+  height:18px;
+  fill:var(--color-primary);
+}
+
+/* Button HTML & CSS — EXACT per spec */
+.btn-call {
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  background:var(--color-primary);
+  color:var(--color-dark);
+  padding:6px 20px;
+  border-radius:var(--radius-pill);
+  transition:background 0.2s, transform 0.2s;
+}
+.btn-call:hover {
+  background:#b07d52;
+  transform:translateY(-1px);
+}
+.btn-call-top {
+  display:flex;
+  align-items:center;
+  gap:7px;
+  font-weight:700;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+}
+.btn-call-top svg {
+  width:16px;
+  height:16px;
+  fill:var(--color-dark);
+}
+.btn-call-bottom {
+  display:flex;
+  justify-content:center;
+}
+.phone-number {
+  font-weight:720;
+  color:var(--color-dark);
+  font-size:16px;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display:none;
+  background:var(--color-white);
+  border-top:2px solid var(--color-primary);
+  padding:16px 24px;
+}
+.mobile-menu.open {
+  display:block;
+  animation:slideDown 0.35s ease;
+}
+.mobile-menu a {
+  display:block;
+  padding:12px 0;
+  font-weight:600;
+  font-size:16px;
+  border-bottom:1px solid var(--color-cream);
+  color:var(--color-dark);
+}
+.mobile-accordion summary {
+  padding:12px 0;
+  font-weight:600;
+  font-size:16px;
+  cursor:pointer;
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid var(--color-cream);
+}
+.mobile-accordion summary::after {
+  content:'+';
+  font-size:20px;
+  color:var(--color-primary);
+}
+.mobile-accordion[open] summary::after { content:'−'; }
+.mobile-submenu {
+  padding:4px 0 4px 16px;
+}
+.mobile-submenu a {
+  font-weight:500;
+  font-size:15px;
+  padding:10px 0;
+  border:none;
+  color:var(--color-secondary);
+}
+
+/* ============================================
+   SECTION 1: HERO BAND
+   ============================================ */
+.hero {
+  position:relative;
+  background:var(--color-dark);
+  color:var(--color-white);
+  padding:80px 0 100px;
+  overflow:hidden;
+}
+.hero::before {
+  content:'';
+  position:absolute;
+  top:0; right:0; bottom:0; left:0;
+  background:
+    radial-gradient(circle at 20% 50%, var(--color-deep-green) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, var(--color-teal) 0%, transparent 40%);
+  pointer-events:none;
+}
+.hero .container {
+  position:relative;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+}
+.hero-content { max-width:640px; }
+.hero h1 {
+  font-size:32px;
+  line-height:1.15;
+  font-weight:800;
+  margin-bottom:20px;
+  color:var(--color-white);
+}
+.hero h1 span { color:var(--color-primary); }
+.hero p {
+  font-size:17px;
+  margin-bottom:16px;
+  color:#d4d0ca;
+  max-width:560px;
+}
+.emergency-badge {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:var(--color-white);
+  color:var(--color-dark);
+  padding:10px 20px;
+  border-radius:var(--radius-pill);
+  font-weight:700;
+  font-size:14px;
+  margin-bottom:24px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+}
+.pulse-dot {
+  width:12px;
+  height:12px;
+  background:#dc3545;
+  border-radius:50%;
+  animation:pulseDot 1.8s infinite;
+}
+.trust-badge-row {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-bottom:28px;
+}
+.trust-badge {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:var(--color-deep-green);
+  color:var(--color-white);
+  padding:8px 16px;
+  border-radius:var(--radius-pill);
+  font-size:13px;
+  font-weight:600;
+  border:1px solid var(--color-teal);
+}
+.trust-badge svg {
+  width:16px;
+  height:16px;
+  fill:var(--color-primary);
+}
+.hero-ctas {
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+}
+.btn-primary {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:var(--color-primary);
+  color:var(--color-dark);
+  padding:16px 28px;
+  border-radius:var(--radius-pill);
+  font-weight:800;
+  font-size:16px;
+  transition:background 0.2s, transform 0.2s;
+}
+.btn-primary:hover {
+  background:#b07d52;
+  transform:translateY(-2px);
+}
+.btn-secondary {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:transparent;
+  color:var(--color-white);
+  padding:16px 28px;
+  border-radius:var(--radius-pill);
+  font-weight:700;
+  font-size:16px;
+  border:2px solid var(--color-primary);
+  transition:background 0.2s, color 0.2s;
+}
+.btn-secondary:hover {
+  background:var(--color-primary);
+  color:var(--color-dark);
+}
+
+.hero-visual {
+  display:none;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+}
+.visual-box {
+  width:100%;
+  max-width:420px;
+  aspect-ratio:4/3;
+  background:var(--color-deep-green);
+  border-radius:var(--radius);
+  border:3px solid var(--color-primary);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+.visual-box::after {
+  content:'';
+  position:absolute;
+  inset:16px;
+  border:2px dashed var(--color-teal);
+  border-radius:4px;
+}
+.visual-icon {
+  width:100px;
+  height:100px;
+  fill:var(--color-primary);
+}
+
+/* Sticky mobile call bar */
+.sticky-mobile-call {
+  display:none;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:var(--color-primary);
+  padding:14px;
+  text-align:center;
+  z-index:999;
+  border-top:3px solid var(--color-dark);
+}
+.sticky-mobile-call a {
+  color:var(--color-dark);
+  font-weight:800;
+  font-size:18px;
+  letter-spacing:0.3px;
+}
+
+/* ============================================
+   SECTION 2: SERVICES BAND
+   ============================================ */
+.services {
+  background:var(--color-white);
+  padding:80px 0;
+}
+.section-header {
+  text-align:center;
+  margin-bottom:48px;
+}
+.section-header h2 {
+  font-size:28px;
+  font-weight:800;
+  color:var(--color-dark);
+  margin-bottom:12px;
+}
+.services h3 {
+  font-size:20px;
+  font-weight:700;
+  color:var(--color-deep-green);
+  margin:40px 0 20px;
+  padding-bottom:10px;
+  border-bottom:2px solid var(--color-primary);
+  display:inline-block;
+}
+.service-grid {
+  display:grid;
+  gap:20px;
+}
+.service-card {
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+  background:var(--color-cream);
+  border:2px solid transparent;
+  border-radius:var(--radius);
+  padding:20px;
+  transition:border-color 0.2s, transform 0.2s;
+}
+.service-card:hover {
+  border-color:var(--color-primary);
+  transform:translateY(-3px);
+}
+.service-icon {
+  flex-shrink:0;
+  width:48px;
+  height:48px;
+  background:var(--color-white);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:2px solid var(--color-primary);
+}
+.service-icon svg {
+  width:24px;
+  height:24px;
+  fill:var(--color-teal);
+}
+.service-text h4 {
+  font-size:17px;
+  font-weight:700;
+  color:var(--color-dark);
+  margin-bottom:6px;
+}
+.service-text p {
+  font-size:15px;
+  color:var(--color-secondary);
+  line-height:1.55;
+}
+.service-link {
+  display:inline-block;
+  margin-top:10px;
+  font-weight:700;
+  font-size:14px;
+  color:var(--color-teal);
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+}
+.service-link:hover { color:var(--color-primary); }
+
+.service-filters {
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+  padding-bottom:8px;
+  margin-bottom:24px;
+  -webkit-overflow-scrolling:touch;
+}
+.filter-btn {
+  flex-shrink:0;
+  padding:10px 20px;
+  border-radius:var(--radius-pill);
+  border:2px solid var(--color-secondary);
+  background:var(--color-white);
+  color:var(--color-dark);
+  font-weight:700;
+  font-size:14px;
+  cursor:pointer;
+  transition:all 0.2s;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background:var(--color-primary);
+  border-color:var(--color-primary);
+  color:var(--color-dark);
+}
+
+.view-all {
+  text-align:center;
+  margin-top:40px;
+}
+.view-all a {
+  display:inline-block;
+  font-weight:800;
+  font-size:16px;
+  color:var(--color-teal);
+  border-bottom:2px solid var(--color-primary);
+  padding-bottom:4px;
+  transition:color 0.2s;
+}
+.view-all a:hover { color:var(--color-primary); }
+
+/* ============================================
+   SECTION 3: PURPOSE AND TRUST BAND
+   ============================================ */
+.process {
+  background:var(--color-deep-green);
+  color:var(--color-white);
+  padding:80px 0;
+}
+.process h2 {
+  font-size:28px;
+  font-weight:800;
+  text-align:center;
+  margin-bottom:48px;
+  color:var(--color-white);
+}
+.timeline {
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+  margin-bottom:60px;
+}
+.timeline-step {
+  position:relative;
+  background:var(--color-dark);
+  border:2px solid var(--color-teal);
+  border-radius:var(--radius);
+  padding:24px;
+  padding-left:72px;
+}
+.step-number {
+  position:absolute;
+  top:20px;
+  left:20px;
+  width:40px;
+  height:40px;
+  background:var(--color-primary);
+  color:var(--color-dark);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  font-size:18px;
+}
+.timeline-step h4 {
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:10px;
+  color:var(--color-primary);
+}
+.timeline-step p {
+  font-size:15px;
+  line-height:1.6;
+  color:#d4d0ca;
+}
+
+.trust-diff {
+  background:var(--color-dark);
+  border:2px solid var(--color-teal);
+  border-radius:var(--radius);
+  padding:32px;
+}
+.trust-diff h3 {
+  font-size:22px;
+  font-weight:800;
+  margin-bottom:20px;
+  color:var(--color-primary);
+}
+.trust-diff ul {
+  display:grid;
+  gap:12px;
+}
+.trust-diff li {
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  font-size:15px;
+  color:#d4d0ca;
+}
+.trust-diff li svg {
+  width:22px;
+  height:22px;
+  fill:var(--color-primary);
+  flex-shrink:0;
+  margin-top:2px;
+}
+
+.technician-card {
+  display:none;
+  background:var(--color-dark);
+  border:2px solid var(--color-primary);
+  border-radius:var(--radius);
+  padding:24px;
+  text-align:center;
+}
+.tech-photo {
+  width:120px;
+  height:120px;
+  background:var(--color-secondary);
+  border-radius:50%;
+  margin:0 auto 16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.tech-photo svg {
+  width:60px;
+  height:60px;
+  fill:var(--color-cream);
+}
+.technician-card h4 {
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:4px;
+}
+.technician-card p {
+  font-size:14px;
+  color:var(--color-primary);
+  margin-bottom:12px;
+}
+.license-badge {
+  display:inline-block;
+  background:var(--color-teal);
+  color:var(--color-white);
+  padding:6px 14px;
+  border-radius:var(--radius-pill);
+  font-size:13px;
+  font-weight:700;
+}
+
+.faq-band {
+  margin-top:60px;
+}
+.faq-band h3 {
+  font-size:22px;
+  font-weight:800;
+  margin-bottom:24px;
+  text-align:center;
+  color:var(--color-primary);
+}
+.faq-item {
+  background:var(--color-dark);
+  border:2px solid var(--color-teal);
+  border-radius:var(--radius);
+  margin-bottom:12px;
+  overflow:hidden;
+}
+.faq-item summary {
+  padding:20px 24px;
+  font-weight:700;
+  font-size:16px;
+  cursor:pointer;
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:var(--color-white);
+}
+.faq-item summary::after {
+  content:'+';
+  font-size:24px;
+  color:var(--color-primary);
+  font-weight:400;
+}
+.faq-item[open] summary::after { content:'−'; }
+.faq-item p {
+  padding:0 24px 20px;
+  font-size:15px;
+  color:#d4d0ca;
+  line-height:1.6;
+}
+
+/* ============================================
+   SECTION 4: LOCAL EXPERTISE BAND
+   ============================================ */
+.local {
+  background:var(--color-white);
+  padding:80px 0;
+}
+.local h2 {
+  font-size:28px;
+  font-weight:800;
+  color:var(--color-dark);
+  margin-bottom:20px;
+  line-height:1.2;
+}
+.local-intro p {
+  font-size:16px;
+  color:var(--color-secondary);
+  margin-bottom:16px;
+  max-width:640px;
+}
+.local-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  margin:24px 0 32px;
+}
+.local-links a {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:var(--color-cream);
+  color:var(--color-dark);
+  padding:12px 20px;
+  border-radius:var(--radius-pill);
+  font-weight:700;
+  font-size:14px;
+  border:2px solid var(--color-primary);
+  transition:background 0.2s;
+}
+.local-links a:hover { background:var(--color-primary); }
+
+.hardness-gauge {
+  background:var(--color-cream);
+  border:2px solid var(--color-primary);
+  border-radius:var(--radius);
+  padding:24px;
+  margin-bottom:24px;
+}
+.gauge-label {
+  font-weight:800;
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  color:var(--color-dark);
+  margin-bottom:12px;
+}
+.gauge-track {
+  height:24px;
+  background:var(--color-white);
+  border-radius:var(--radius-pill);
+  border:2px solid var(--color-secondary);
+  position:relative;
+  overflow:hidden;
+}
+.gauge-fill {
+  height:100%;
+  width:75%;
+  background:var(--color-primary);
+  border-radius:var(--radius-pill);
+  position:relative;
+}
+.gauge-fill::after {
+  content:'13-21';
+  position:absolute;
+  right:10px;
+  top:50%;
+  transform:translateY(-50%);
+  font-weight:800;
+  font-size:12px;
+  color:var(--color-dark);
+}
+.gauge-ticks {
+  display:flex;
+  justify-content:space-between;
+  margin-top:8px;
+  font-size:13px;
+  font-weight:700;
+  color:var(--color-secondary);
+}
+
+.local-cards {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-bottom:32px;
+}
+.local-card {
+  background:var(--color-cream);
+  border:2px solid transparent;
+  border-radius:var(--radius);
+  overflow:hidden;
+  transition:border-color 0.2s;
+}
+.local-card:hover { border-color:var(--color-primary); }
+.local-card summary {
+  padding:16px 20px;
+  font-weight:700;
+  font-size:16px;
+  cursor:pointer;
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:var(--color-dark);
+}
+.local-card summary::after {
+  content:'+';
+  font-size:22px;
+  color:var(--color-primary);
+}
+.local-card[open] summary::after { content:'−'; }
+.local-card p {
+  padding:0 20px 16px;
+  font-size:15px;
+  color:var(--color-secondary);
+  line-height:1.55;
+}
+
+.neighborhoods {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:32px;
+}
+.neighborhoods span {
+  display:inline-block;
+  padding:8px 16px;
+  background:var(--color-white);
+  border:2px solid var(--color-secondary);
+  border-radius:var(--radius-pill);
+  font-size:14px;
+  font-weight:600;
+  color:var(--color-dark);
+  transition:all 0.2s;
+}
+.neighborhoods span:hover {
+  background:var(--color-primary);
+  border-color:var(--color-primary);
+  color:var(--color-dark);
+}
+
+.before-after {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:24px;
+}
+.ba-box {
+  background:var(--color-cream);
+  border:2px solid var(--color-secondary);
+  border-radius:var(--radius);
+  padding:24px;
+  text-align:center;
+  min-height:160px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.ba-box h5 {
+  font-size:14px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-bottom:12px;
+  color:var(--color-dark);
+}
+.ba-box svg {
+  width:64px;
+  height:64px;
+  fill:var(--color-secondary);
+}
+.ba-box:first-child svg { fill:#8b4513; }
+.ba-box:last-child svg { fill:var(--color-teal); }
+
+/* ============================================
+   SECTION 5: PREMIUM CTA BAND WITH FORM
+   ============================================ */
+.cta-band {
+  background:var(--color-teal);
+  color:var(--color-white);
+  padding:80px 0;
+}
+.cta-band h2 {
+  font-size:28px;
+  font-weight:800;
+  text-align:center;
+  margin-bottom:12px;
+  color:var(--color-white);
+}
+.cta-sub {
+  text-align:center;
+  font-size:17px;
+  color:#d4d0ca;
+  max-width:600px;
+  margin:0 auto 40px;
+}
+
+.mobile-tap-call {
+  display:none;
+  background:var(--color-primary);
+  border-radius:var(--radius);
+  padding:16px;
+  text-align:center;
+  margin-bottom:24px;
+}
+.mobile-tap-call a {
+  color:var(--color-dark);
+}
+.mobile-tap-call .call-label {
+  display:block;
+  font-weight:800;
+  font-size:20px;
+}
+.mobile-tap-call .call-sub {
+  display:block;
+  font-size:14px;
+  font-weight:600;
+  margin-top:4px;
+}
+
+.form-grid {
+  display:grid;
+  gap:20px;
+  max-width:800px;
+  margin:0 auto;
+}
+.form-group {
+  position:relative;
+}
+.form-group input,
+.form-group textarea {
+  width:100%;
+  padding:18px 14px 6px;
+  border:2px solid var(--color-deep-green);
+  border-radius:var(--radius);
+  background:var(--color-white);
+  color:var(--color-dark);
+  font-size:16px;
+  font-family:inherit;
+  outline:none;
+  transition:border-color 0.2s;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color:var(--color-primary);
+}
+.form-group label {
+  position:absolute;
+  left:14px;
+  top:50%;
+  transform:translateY(-50%);
+  color:var(--color-secondary);
+  font-size:16px;
+  font-weight:600;
+  pointer-events:none;
+  transition:0.2s;
+}
+.form-group textarea {
+  min-height:120px;
+  resize:vertical;
+  padding-top:22px;
+}
+.form-group textarea + label { top:18px; transform:none; }
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top:8px;
+  font-size:11px;
+  color:var(--color-primary);
+  font-weight:700;
+}
+
+.btn-submit {
+  width:100%;
+  padding:18px;
+  background:var(--color-primary);
+  color:var(--color-dark);
+  border:none;
+  border-radius:var(--radius-pill);
+  font-size:18px;
+  font-weight:800;
+  cursor:pointer;
+  transition:background 0.2s, transform 0.2s;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.btn-submit:hover {
+  background:#b07d52;
+  transform:translateY(-2px);
+}
+
+.form-note {
+  text-align:center;
+  margin-top:24px;
+  font-size:15px;
+  color:#d4d0ca;
+}
+.form-note a {
+  color:var(--color-primary);
+  font-weight:700;
+}
+
+.toast {
+  display:none;
+  position:fixed;
+  top:20px;
+  right:20px;
+  background:var(--color-primary);
+  color:var(--color-dark);
+  padding:16px 24px;
+  border-radius:var(--radius);
+  font-weight:700;
+  z-index:2000;
+  border:2px solid var(--color-dark);
+}
+
+/* ============================================
+   SECTION 6: TRUST AND LOCATION BAND
+   ============================================ */
+.trust-location {
+  background:var(--color-white);
+  padding:80px 0;
+}
+.trust-location h2 {
+  font-size:28px;
+  font-weight:800;
+  color:var(--color-dark);
+  margin-bottom:12px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.trust-location h2 svg {
+  width:32px;
+  height:32px;
+  fill:var(--color-primary);
+}
+.trust-location > .container > p {
+  font-size:16px;
+  color:var(--color-secondary);
+  margin-bottom:32px;
+  max-width:640px;
+}
+
+.area-tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:32px;
+}
+.area-tag {
+  display:inline-block;
+  padding:8px 16px;
+  background:var(--color-white);
+  border:2px solid var(--color-secondary);
+  border-radius:var(--radius-pill);
+  font-size:14px;
+  font-weight:600;
+  color:var(--color-dark);
+  transition:all 0.2s;
+}
+.area-tag:hover {
+  background:var(--color-primary);
+  border-color:var(--color-primary);
+  color:var(--color-dark);
+}
+
+.map-frame {
+  width:100%;
+  height:360px;
+  border:3px solid var(--color-primary);
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:var(--color-cream);
+}
+.map-frame iframe {
+  width:100%;
+  height:100%;
+  border:0;
+}
+.map-link {
+  text-align:center;
+  margin-top:16px;
+}
+.map-link a {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-weight:700;
+  font-size:16px;
+  color:var(--color-teal);
+  border-bottom:2px solid var(--color-primary);
+  padding-bottom:4px;
+  transition:color 0.2s;
+}
+.map-link a:hover { color:var(--color-primary); }
+
+/* ============================================
+   SECTION 7: FOOTER NAP BAND
+   ============================================ */
+.footer {
+  background:var(--color-dark);
+  color:var(--color-white);
+  padding:60px 0 24px;
+}
+.footer-grid {
+  display:grid;
+  gap:40px;
+  margin-bottom:40px;
+}
+.footer-col h4 {
+  font-size:18px;
+  font-weight:800;
+  margin-bottom:16px;
+  color:var(--color-primary);
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+}
+.footer-col p,
+.footer-col a,
+.footer-col li {
+  font-size:15px;
+  color:#d4d0ca;
+  line-height:1.8;
+}
+.footer-col a:hover { color:var(--color-primary); }
+.footer-phone {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:20px;
+  font-weight:800;
+  color:var(--color-primary);
+  margin:8px 0;
+}
+.footer-phone svg {
+  width:22px;
+  height:22px;
+  fill:var(--color-primary);
+}
+.license-display {
+  display:inline-block;
+  background:var(--color-deep-green);
+  color:var(--color-white);
+  padding:6px 14px;
+  border-radius:var(--radius-pill);
+  font-size:13px;
+  font-weight:700;
+  margin-top:8px;
+  border:1px solid var(--color-teal);
+}
+.hours-list li {
+  display:flex;
+  justify-content:space-between;
+  padding:6px 0;
+  border-bottom:1px solid var(--color-deep-green);
+}
+.hours-list li:last-child { border-bottom:none; }
+.hours-list .emergency {
+  color:var(--color-primary);
+  font-weight:700;
+}
+
+.footer-services { display:none; }
+.footer-services.open { display:block; }
+
+.footer-bottom {
+  border-top:2px solid var(--color-deep-green);
+  padding-top:24px;
+  text-align:center;
+  font-size:14px;
+  color:var(--color-secondary);
+}
+
+.back-to-top {
+  position:fixed;
+  bottom:80px;
+  right:20px;
+  width:48px;
+  height:48px;
+  background:var(--color-primary);
+  color:var(--color-dark);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  font-weight:800;
+  cursor:pointer;
+  border:none;
+  z-index:900;
+  transition:background 0.2s;
+}
+.back-to-top:hover { background:#b07d52; }
+
+/* ============================================
+   RESPONSIVE — TABLET (768px+)
+   ============================================ */
+@media (min-width: 768px) {
+  .hero h1 { font-size:42px; }
+  .section-header h2,
+  .process h2,
+  .local h2,
+  .cta-band h2,
+  .trust-location h2 { font-size:34px; }
+
+  .service-grid { grid-template-columns:repeat(2, 1fr); }
+  .service-card { flex-direction:column; }
+  .service-icon { margin-bottom:12px; }
+
+  .form-grid { grid-template-columns:repeat(2, 1fr); }
+  .form-group.full-width { grid-column:span 2; }
+
+  .footer-grid { grid-template-columns:repeat(2, 1fr); }
+  .footer-services { display:block !important; }
+}
+
+/* ============================================
+   RESPONSIVE — DESKTOP (1024px+)
+   ============================================ */
+@media (min-width: 1024px) {
+  .desktop-nav { display:flex; }
+  .hamburger { display:none; }
+  .mobile-menu { display:none !important; }
+
+  .hero .container {
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
   }
-  </script>
-
-  <style>
-    /* ============================================
-       CSS CUSTOM PROPERTIES — COLOR PALETTE
-       ============================================ */
-    :root {
-      --color-primary: #C99366;
-      --color-primary-dark: #B07D4B;
-      --color-secondary: #726150;
-      --color-dark: #001805;
-      --color-deep-green: #184129;
-      --color-teal: #005240;
-      --color-white: #FFFFFF;
-      --color-cream: #F5F1ED;
-      --color-light-tan: #EDE6DF;
-      --color-gold-muted: #B07D4B;
-      --color-red: #D93A3A;
-      --color-orange: #E8812A;
-
-      --font-heading: 'Playfair Display', Georgia, serif;
-      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-
-      --container-max: 1200px;
-      --section-pad-y: 5rem;
-      --section-pad-y-tablet: 3.5rem;
-      --section-pad-y-mobile: 2.5rem;
-    }
-
-    /* ============================================
-       RESET & BASE
-       ============================================ */
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      -webkit-text-size-adjust: 100%;
-    }
-
-    body {
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      line-height: 1.65;
-      color: var(--color-secondary);
-      background-color: var(--color-cream);
-      overflow-x: hidden;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: var(--font-heading);
-      font-weight: 600;
-      line-height: 1.15;
-      color: var(--color-dark);
-    }
-
-    a {
-      color: var(--color-teal);
-      text-decoration: none;
-      transition: color 0.25s ease;
-    }
-
-    a:hover {
-      color: var(--color-primary);
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    .container {
-      max-width: var(--container-max);
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    /* ============================================
-       UTILITY CLASSES
-       ============================================ */
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0,0,0,0);
-      border: 0;
-    }
-
-    /* ============================================
-       ANIMATIONS — KEYFRAMES
-       ============================================ */
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInLeft {
-      from { opacity: 0; transform: translateX(-40px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-
-    @keyframes fadeInRight {
-      from { opacity: 0; transform: translateX(40px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-
-    @keyframes emergencyPulse {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(201, 147, 102, 0.6); }
-      50% { box-shadow: 0 0 0 12px rgba(201, 147, 102, 0); }
-    }
-
-    @keyframes shimmer {
-      0% { background-position: -200% center; }
-      100% { background-position: 200% center; }
-    }
-
-    @keyframes scaleIn {
-      from { opacity: 0; transform: scale(0.92); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
-    @keyframes slideDown {
-      from { opacity: 0; transform: translateY(-10px); max-height: 0; }
-      to { opacity: 1; transform: translateY(0); max-height: 500px; }
-    }
-
-    @keyframes borderFill {
-      from { stroke-dashoffset: 283; }
-      to { stroke-dashoffset: 85; }
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
-    }
-
-    .anim-fade-up {
-      animation: fadeInUp 0.7s ease forwards;
-      opacity: 0;
-    }
-
-    .anim-fade-up-1 { animation-delay: 0.1s; }
-    .anim-fade-up-2 { animation-delay: 0.2s; }
-    .anim-fade-up-3 { animation-delay: 0.3s; }
-    .anim-fade-up-4 { animation-delay: 0.4s; }
-    .anim-fade-up-5 { animation-delay: 0.5s; }
-
-    .anim-fade-left {
-      animation: fadeInLeft 0.7s ease forwards;
-      opacity: 0;
-    }
-
-    .anim-fade-right {
-      animation: fadeInRight 0.7s ease forwards;
-      opacity: 0;
-    }
-
-    .anim-scale-in {
-      animation: scaleIn 0.6s ease forwards;
-      opacity: 0;
-    }
-
-    /* Intersection observer reveal classes */
-    .reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .reveal-left {
-      opacity: 0;
-      transform: translateX(-30px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .reveal-left.visible {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    .reveal-right {
-      opacity: 0;
-      transform: translateX(30px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .reveal-right.visible {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    .reveal-scale {
-      opacity: 0;
-      transform: scale(0.9);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .reveal-scale.visible {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    /* Stagger delays */
-    .stagger-1 { transition-delay: 0.08s; }
-    .stagger-2 { transition-delay: 0.16s; }
-    .stagger-3 { transition-delay: 0.24s; }
-    .stagger-4 { transition-delay: 0.32s; }
-    .stagger-5 { transition-delay: 0.40s; }
-    .stagger-6 { transition-delay: 0.48s; }
-
-    /* ============================================
-       BUTTONS & CTAs
-       ============================================ */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.85rem 2rem;
-      border-radius: 50px;
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      cursor: pointer;
-      border: none;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
-
-    .btn-primary {
-      background-color: var(--color-primary);
-      color: var(--color-dark);
-    }
-
-    .btn-primary:hover {
-      background-color: var(--color-primary-dark);
-      color: var(--color-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(201, 147, 102, 0.35);
-    }
-
-    .btn-outline {
-      background-color: transparent;
-      color: var(--color-white);
-      border: 1.5px solid var(--color-primary);
-    }
-
-    .btn-outline:hover {
-      background-color: var(--color-primary);
-      color: var(--color-dark);
-    }
-
-    .btn-dark {
-      background-color: var(--color-dark);
-      color: var(--color-white);
-    }
-
-    .btn-dark:hover {
-      background-color: var(--color-deep-green);
-      color: var(--color-white);
-    }
-
-    .btn-white {
-      background-color: var(--color-white);
-      color: var(--color-dark);
-    }
-
-    .btn-white:hover {
-      background-color: var(--color-cream);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-    }
-
-    .btn-lg {
-      padding: 1rem 2.5rem;
-      font-size: 1rem;
-    }
-
-    .btn-sm {
-      padding: 0.6rem 1.25rem;
-      font-size: 0.8rem;
-    }
-
-    /* ============================================
-       HEADER — STICKY TWO-TIER
-       ============================================ */
-    .header-sticky {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      background-color: var(--color-deep-green);
-    }
-
-    /* Tier 1 — Main Navigation */
-    .header-tier1 {
-      height: 75px;
-      display: flex;
-      align-items: center;
-    }
-
-    .header-tier1 .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex-shrink: 0;
-    }
-
-    .logo-icon {
-      width: 42px;
-      height: 42px;
-      background-color: var(--color-primary);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-dark);
-      font-size: 1.2rem;
-    }
-
-    .logo-text {
-      font-family: var(--font-heading);
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--color-white);
-      line-height: 1.2;
-    }
-
-    .logo-text span {
-      display: block;
-      font-family: var(--font-body);
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--color-primary);
-    }
-
-    .logo-img {
-      height: 70px;
-      width: auto;
-    }
-
-    /* Desktop Nav */
-    .nav-desktop {
-      display: flex;
-      align-items: center;
-      gap: 0;
-    }
-
-    .nav-desktop > li {
-      position: relative;
-    }
-
-    .nav-desktop > li > a {
-      display: block;
-      padding: 0.75rem 1rem;
-      color: var(--color-white);
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      transition: color 0.25s ease;
-    }
-
-    .nav-desktop > li > a:hover {
-      color: var(--color-primary);
-    }
-
-    .nav-desktop > li.has-dropdown > a::after {
-      content: '\f0d7';
-      font-family: 'Font Awesome 6 Free';
-      font-weight: 900;
-      margin-left: 0.4rem;
-      font-size: 0.7rem;
-      color: var(--color-primary);
-    }
-
-    /* Dropdown */
-    .dropdown {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      min-width: 280px;
-      background-color: var(--color-dark);
-      border-radius: 0 0 8px 8px;
-      padding: 0.75rem 0;
-      box-shadow: 0 12px 32px rgba(0,0,0,0.3);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(8px);
-      transition: all 0.25s ease;
-      z-index: 100;
-    }
-
-    .has-dropdown:hover .dropdown {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    .dropdown a {
-      display: block;
-      padding: 0.55rem 1.25rem;
-      color: var(--color-white);
-      font-size: 0.82rem;
-      font-weight: 400;
-      transition: all 0.2s ease;
-      white-space: nowrap;
-    }
-
-    .dropdown a:hover {
-      background-color: rgba(201, 147, 102, 0.15);
-      color: var(--color-primary);
-      padding-left: 1.5rem;
-    }
-
-    /* Mobile hamburger */
-    .hamburger {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0.5rem;
-      color: var(--color-white);
-      font-size: 1.4rem;
-    }
-
-    /* Tier 2 — Location & CTA Bar */
-    .header-tier2 {
-      height: 65px;
-      background-color: var(--color-dark);
-      border-top: 1px solid rgba(255,255,255,0.08);
-      display: flex;
-      align-items: center;
-    }
-
-    .header-tier2 .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-    }
-
-    .location-bar {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--color-white);
-      font-size: 0.85rem;
-      font-weight: 500;
-    }
-
-    .location-bar i {
-      color: var(--color-primary);
-      font-size: 1rem;
-    }
-
-    /* Call Button */
-    .btn-call {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: var(--color-primary);
-      color: var(--color-dark);
-      padding: 0.4rem 1.25rem;
-      border-radius: 50px;
-      text-decoration: none;
-      transition: all 0.25s ease;
-      gap: 1px;
-    }
-
-    .btn-call:hover {
-      background-color: var(--color-primary-dark);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 16px rgba(201, 147, 102, 0.35);
-    }
-
-    .btn-call-top {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-    }
-
-    .btn-call-top svg,
-    .btn-call-top i {
-      font-size: 0.75rem;
-    }
-
-    .btn-call-top span {
-      font-size: 0.75rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .btn-call-bottom {
-      display: flex;
-      justify-content: center;
-    }
-
-    .phone-number {
-      font-weight: 720;
-      color: var(--color-dark);
-      font-size: 1rem;
-      letter-spacing: 0.01em;
-    }
-
-    /* Mobile Menu */
-    .mobile-menu {
-      display: none;
-      background-color: var(--color-white);
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease;
-    }
-
-    .mobile-menu.open {
-      display: block;
-      max-height: 100vh;
-      overflow-y: auto;
-    }
-
-    .mobile-menu a {
-      display: block;
-      padding: 0.85rem 1.5rem;
-      color: var(--color-dark);
-      font-size: 0.9rem;
-      font-weight: 500;
-      border-bottom: 1px solid var(--color-light-tan);
-      transition: all 0.2s ease;
-    }
-
-    .mobile-menu a:hover {
-      background-color: var(--color-cream);
-      color: var(--color-teal);
-      padding-left: 1.75rem;
-    }
-
-    .mobile-dropdown-toggle {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.85rem 1.5rem;
-      color: var(--color-dark);
-      font-size: 0.9rem;
-      font-weight: 600;
-      border-bottom: 1px solid var(--color-light-tan);
-      cursor: pointer;
-      background: none;
-      width: 100%;
-      border: none;
-      border-bottom: 1px solid var(--color-light-tan);
-    }
-
-    .mobile-dropdown-toggle i {
-      transition: transform 0.25s ease;
-      color: var(--color-primary);
-    }
-
-    .mobile-dropdown-toggle.active i {
-      transform: rotate(180deg);
-    }
-
-    .mobile-submenu {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-      background-color: var(--color-cream);
-    }
-
-    .mobile-submenu.open {
-      max-height: 600px;
-    }
-
-    .mobile-submenu a {
-      padding-left: 2.5rem;
-      font-size: 0.85rem;
-      font-weight: 400;
-      color: var(--color-secondary);
-      border-bottom: 1px solid var(--color-light-tan);
-    }
-
-    /* ============================================
-       SECTION 1 — EMERGENCY HERO BAND
-       ============================================ */
-    .hero {
-      background-color: var(--color-dark);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding-top: 160px;
-      padding-bottom: var(--section-pad-y);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 80px,
-        rgba(201, 147, 102, 0.03) 80px,
-        rgba(201, 147, 102, 0.03) 81px
-      );
-      pointer-events: none;
-    }
-
-    .hero .container {
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background-color: rgba(201, 147, 102, 0.15);
-      color: var(--color-primary);
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      margin-bottom: 1.25rem;
-      border: 1px solid rgba(201, 147, 102, 0.25);
-    }
-
-    .hero-badge i {
-      font-size: 0.6rem;
-    }
-
-    .hero h1 {
-      color: var(--color-white);
-      font-size: 2.5rem;
-      margin-bottom: 1.25rem;
-      max-width: 600px;
-    }
-
-    .hero p {
-      color: rgba(255,255,255,0.85);
-      font-size: 0.95rem;
-      margin-bottom: 1.75rem;
-      max-width: 540px;
-    }
-
-    .hero-label {
-      color: var(--color-primary);
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 0.75rem;
-    }
-
-    .emergency-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.4rem 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .emergency-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.5rem;
-      color: rgba(255,255,255,0.8);
-      font-size: 0.85rem;
-      line-height: 1.5;
-    }
-
-    .emergency-list li i {
-      color: var(--color-red);
-      font-size: 0.5rem;
-      margin-top: 0.4rem;
-      flex-shrink: 0;
-    }
-
-    .hero-ctas {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      flex-wrap: wrap;
-    }
-
-    .hero-ctas .btn-lg {
-      font-size: 1rem;
-      padding: 1rem 2rem;
-    }
-
-    .hero-ctas a:last-child {
-      color: var(--color-primary);
-      font-size: 0.9rem;
-      font-weight: 500;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .hero-ctas a:last-child:hover {
-      color: var(--color-white);
-    }
-
-    /* Hero Right — Image */
-    .hero-visual {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero-img-wrapper {
-      position: relative;
-      border-radius: 1rem;
-      overflow: hidden;
-      box-shadow: 0 24px 64px rgba(0,0,0,0.4);
-    }
-
-    .hero-img-wrapper img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-    }
-
-    .emergency-badge {
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      background-color: var(--color-primary);
-      color: var(--color-dark);
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      padding: 0.65rem 1.25rem;
-      border-radius: 50px;
-      animation: emergencyPulse 2s infinite;
-      z-index: 3;
-    }
-
-    .response-badge {
-      position: absolute;
-      bottom: -1rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: var(--color-white);
-      color: var(--color-dark);
-      font-size: 0.85rem;
-      font-weight: 700;
-      padding: 0.75rem 1.5rem;
-      border-radius: 50px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      white-space: nowrap;
-      z-index: 3;
-    }
-
-    .response-badge i {
-      color: var(--color-teal);
-    }
-
-    /* ============================================
-       SECTION 2 — PASCO COUNTY EMERGENCY LANDSCAPE
-       ============================================ */
-    .landscape {
-      background-color: var(--color-cream);
-      padding: var(--section-pad-y) 0;
-    }
-
-    .landscape-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: start;
-    }
-
-    .landscape h2 {
-      font-size: 2rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .landscape p {
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-      color: var(--color-secondary);
-    }
-
-    .landscape h3 {
-      font-family: var(--font-body);
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--color-dark);
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .neighborhood-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin: 1.25rem 0;
-    }
-
-    .tag-pill {
-      display: inline-block;
-      padding: 0.4rem 0.9rem;
-      background-color: var(--color-white);
-      color: var(--color-secondary);
-      font-size: 0.8rem;
-      font-weight: 500;
-      border-radius: 50px;
-      border: 1px solid var(--color-light-tan);
-      transition: all 0.3s ease;
-      cursor: default;
-    }
-
-    .tag-pill:hover {
-      background-color: var(--color-primary);
-      color: var(--color-dark);
-      border-color: var(--color-primary);
-    }
-
-    .internal-links {
-      margin-top: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .internal-links a {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--color-teal);
-      font-size: 0.85rem;
-      font-weight: 500;
-    }
-
-    .internal-links a i {
-      font-size: 0.7rem;
-    }
-
-    .internal-links a:hover {
-      color: var(--color-primary);
-    }
-
-    /* Water Hardness Gauge */
-    .gauge-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      margin: 1.5rem 0;
-      padding: 1.25rem;
-      background-color: var(--color-white);
-      border-radius: 0.75rem;
-      border: 1px solid var(--color-light-tan);
-    }
-
-    .gauge-circle {
-      position: relative;
-      width: 80px;
-      height: 80px;
-      flex-shrink: 0;
-    }
-
-    .gauge-circle svg {
-      width: 100%;
-      height: 100%;
-      transform: rotate(-90deg);
-    }
-
-    .gauge-bg {
-      fill: none;
-      stroke: var(--color-light-tan);
-      stroke-width: 6;
-    }
-
-    .gauge-fill {
-      fill: none;
-      stroke: var(--color-primary);
-      stroke-width: 6;
-      stroke-linecap: round;
-      stroke-dasharray: 283;
-      stroke-dashoffset: 283;
-      transition: stroke-dashoffset 2s ease;
-    }
-
-    .gauge-circle.in-view .gauge-fill {
-      stroke-dashoffset: 85;
-    }
-
-    .gauge-value {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-heading);
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--color-dark);
-    }
-
-    .gauge-info h4 {
-      font-family: var(--font-body);
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--color-dark);
-      margin-bottom: 0.15rem;
-    }
-
-    .gauge-info p {
-      font-size: 0.8rem;
-      margin-bottom: 0;
-    }
-
-    /* Accordion Cards */
-    .accordion-cards {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .accordion-card {
-      background-color: var(--color-white);
-      border-radius: 0.75rem;
-      border: 1px solid var(--color-light-tan);
-      overflow: hidden;
-      transition: box-shadow 0.3s ease;
-    }
-
-    .accordion-card:hover {
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-    }
-
-    .accordion-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 1.25rem;
-      cursor: pointer;
-      background: none;
-      border: none;
-      width: 100%;
-      text-align: left;
-    }
-
-    .accordion-header h4 {
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--color-dark);
-    }
-
-    .accordion-header i {
-      color: var(--color-primary);
-      font-size: 0.85rem;
-      transition: transform 0.3s ease;
-    }
-
-    .accordion-card.open .accordion-header i {
-      transform: rotate(180deg);
-    }
-
-    .accordion-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease, padding 0.4s ease;
-      padding: 0 1.25rem;
-    }
-
-    .accordion-card.open .accordion-body {
-      max-height: 300px;
-      padding: 0 1.25rem 1.25rem;
-    }
-
-    .accordion-body p {
-      font-size: 0.88rem;
-      margin-bottom: 0;
-    }
-
-    /* ============================================
-       SECTION 3 — EMERGENCY TYPES & RESPONSE
-       ============================================ */
-    .emergency-types {
-      background-color: var(--color-deep-green);
-      padding: var(--section-pad-y) 0;
-    }
-
-    .emergency-types h2 {
-      color: var(--color-white);
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 0.5rem;
-    }
-
-    .emergency-types .section-subtitle {
-      color: rgba(255,255,255,0.7);
-      text-align: center;
-      font-size: 0.9rem;
-      margin-bottom: 2.5rem;
-    }
-
-    /* Emergency Cards Grid */
-    .emergency-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-bottom: 4rem;
-    }
-
-    .emergency-card {
-      background-color: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 0.75rem;
-      padding: 1.5rem;
-      transition: all 0.35s ease;
-      cursor: default;
-    }
-
-    .emergency-card:hover {
-      background-color: rgba(255,255,255,0.1);
-      border-color: rgba(201, 147, 102, 0.4);
-      transform: translateY(-6px);
-      box-shadow: 0 16px 40px rgba(0,0,0,0.25);
-    }
-
-    .card-header-row {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .severity-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    .severity-dot.red {
-      background-color: var(--color-red);
-      box-shadow: 0 0 8px rgba(217, 58, 58, 0.5);
-    }
-
-    .severity-dot.orange {
-      background-color: var(--color-orange);
-      box-shadow: 0 0 8px rgba(232, 129, 42, 0.5);
-    }
-
-    .emergency-card h3 {
-      color: var(--color-white);
-      font-family: var(--font-body);
-      font-size: 1.05rem;
-      font-weight: 600;
-    }
-
-    .emergency-card .label {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-top: 0.75rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .emergency-card .label.trigger { color: var(--color-red); }
-    .emergency-card .label.action { color: var(--color-primary); }
-    .emergency-card .label.diagnostic { color: var(--color-teal); }
-
-    .emergency-card p {
-      color: rgba(255,255,255,0.8);
-      font-size: 0.85rem;
-      line-height: 1.6;
-      margin-bottom: 0;
-    }
-
-    /* Mobile Accordion */
-    .emergency-card-mobile {
-      display: none;
-      background-color: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 0.75rem;
-      overflow: hidden;
-    }
-
-    .emergency-card-mobile .mobile-card-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 1.25rem;
-      cursor: pointer;
-      background: none;
-      border: none;
-      width: 100%;
-      text-align: left;
-    }
-
-    .emergency-card-mobile .mobile-card-header .card-title-row {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .emergency-card-mobile .mobile-card-header h3 {
-      color: var(--color-white);
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      font-weight: 600;
-    }
-
-    .emergency-card-mobile .mobile-card-header i {
-      color: var(--color-primary);
-      transition: transform 0.3s ease;
-    }
-
-    .emergency-card-mobile.open .mobile-card-header i {
-      transform: rotate(180deg);
-    }
-
-    .emergency-card-mobile .mobile-card-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease, padding 0.4s ease;
-      padding: 0 1.25rem;
-    }
-
-    .emergency-card-mobile.open .mobile-card-body {
-      max-height: 400px;
-      padding: 0 1.25rem 1.25rem;
-    }
-
-    .emergency-card-mobile .label {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 0.25rem;
-    }
-
-    .emergency-card-mobile p {
-      color: rgba(255,255,255,0.8);
-      font-size: 0.85rem;
-      margin-bottom: 0.75rem;
-    }
-
-    /* Dispatch Protocol Timeline */
-    .protocol {
-      border-top: 1px solid rgba(255,255,255,0.1);
-      padding-top: 3rem;
-    }
-
-    .protocol h3 {
-      color: var(--color-white);
-      font-family: var(--font-body);
-      font-size: 1.15rem;
-      font-weight: 600;
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-
-    .timeline {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      top: 22px;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background-color: rgba(255,255,255,0.1);
-      z-index: 1;
-    }
-
-    .timeline-fill {
-      position: absolute;
-      top: 22px;
-      left: 0;
-      height: 3px;
-      background-color: var(--color-primary);
-      z-index: 2;
-      width: 0%;
-      transition: width 1.5s ease;
-    }
-
-    .timeline-fill.visible {
-      width: 100%;
-    }
-
-    .timeline-step {
-      position: relative;
-      z-index: 3;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      flex: 1;
-      max-width: 180px;
-    }
-
-    .step-number {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background-color: var(--color-deep-green);
-      border: 3px solid rgba(255,255,255,0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-heading);
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--color-white);
-      margin-bottom: 0.75rem;
-      transition: all 0.4s ease;
-    }
-
-    .timeline-step.active .step-number {
-      border-color: var(--color-primary);
-      background-color: var(--color-primary);
-      color: var(--color-dark);
-    }
-
-    .timeline-step h4 {
-      font-family: var(--font-body);
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--color-white);
-      margin-bottom: 0.35rem;
-    }
-
-    .timeline-step p {
-      color: rgba(255,255,255,0.65);
-      font-size: 0.75rem;
-      line-height: 1.5;
-      margin: 0;
-    }
-
-    /* Timeline Vertical (Tablet) */
-    .timeline-vertical {
-      display: none;
-      flex-direction: column;
-      gap: 1.5rem;
-      position: relative;
-    }
-
-    .timeline-vertical::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 21px;
-      width: 3px;
-      background-color: rgba(255,255,255,0.1);
-    }
-
-    .timeline-v-step {
-      display: flex;
-      gap: 1.25rem;
-      align-items: flex-start;
-      position: relative;
-      z-index: 2;
-    }
-
-    .timeline-v-step .step-number {
-      margin-bottom: 0;
-      flex-shrink: 0;
-      width: 44px;
-      height: 44px;
-      background-color: var(--color-deep-green);
-    }
-
-    .timeline-v-step.active .step-number {
-      border-color: var(--color-primary);
-      background-color: var(--color-primary);
-      color: var(--color-dark);
-    }
-
-    .timeline-v-step .step-content h4 {
-      font-family: var(--font-body);
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--color-white);
-      margin-bottom: 0.25rem;
-    }
-
-    .timeline-v-step .step-content p {
-      color: rgba(255,255,255,0.7);
-      font-size: 0.8rem;
-      margin: 0;
-    }
-
-    /* ============================================
-       SECTION 4 — TEMPORARY MEASURES
-       ============================================ */
-    .measures {
-      background-color: var(--color-white);
-      padding: var(--section-pad-y) 0;
-    }
-
-    .measures-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: start;
-    }
-
-    .measures h2 {
-      font-size: 2rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .measures > .container > p.intro {
-      font-size: 0.95rem;
-      margin-bottom: 2rem;
-      max-width: 700px;
-    }
-
-    /* Numbered Step Cards */
-    .measure-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .measure-card {
-      display: flex;
-      gap: 1rem;
-      padding: 1.25rem;
-      background-color: var(--color-cream);
-      border-radius: 0.75rem;
-      border: 1px solid var(--color-light-tan);
-      transition: all 0.3s ease;
-    }
-
-    .measure-card:hover {
-      border-color: var(--color-primary);
-      box-shadow: 0 4px 16px rgba(201, 147, 102, 0.1);
-    }
-
-    .measure-num {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: var(--color-primary);
-      color: var(--color-dark);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-heading);
-      font-size: 1.1rem;
-      font-weight: 700;
-      flex-shrink: 0;
-    }
-
-    .measure-content h4 {
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--color-dark);
-      margin-bottom: 0.25rem;
-    }
-
-    .measure-content p {
-      font-size: 0.85rem;
-      color: var(--color-secondary);
-      margin-bottom: 0;
-      line-height: 1.55;
-    }
-
-    /* Right Column */
-    .measures-right {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-
-    /* Seasonal Calendar */
-    .calendar-block h3 {
-      font-family: var(--font-body);
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--color-dark);
-      margin-bottom: 1rem;
-    }
-
-    .seasonal-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
-    }
-
-    .season-card {
-      padding: 1rem;
-      background-color: var(--color-cream);
-      border-radius: 0.5rem;
-      border-left: 4px solid var(--color-primary);
-    }
-
-    .season-card.alt { border-left-color: var(--color-teal); }
-    .season-card.alt2 { border-left-color: var(--color-orange); }
-
-    .season-card h4 {
-      font-family: var(--font-body);
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--color-dark);
-      margin-bottom: 0.35rem;
-    }
-
-    .season-card p {
-      font-size: 0.78rem;
-      color: var(--color-secondary);
-      margin-bottom: 0;
-      line-height: 1.5;
-    }
-
-    /* Insurance Badge */
-    .insurance-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.65rem 1.25rem;
-      background-color: var(--color-deep-green);
-      color: var(--color-white);
-      font-size: 0.8rem;
-      font-weight: 600;
-      border-radius: 50px;
-      margin-top: 0.5rem;
-    }
-
-    .insurance-badge i {
-      color: var(--color-primary);
-    }
-
-    /* Equipment */
-    .equipment-block {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
-    }
-
-    .equipment-block img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 0.5rem;
-    }
-
-    /* Mold Timer */
-    .mold-timer {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 1.25rem;
-      background-color: var(--color-dark);
-      border-radius: 0.75rem;
-      margin-top: 0.5rem;
-    }
-
-    .mold-timer-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background-color: var(--color-red);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-white);
-      font-size: 1.2rem;
-      flex-shrink: 0;
-      animation: emergencyPulse 2s infinite;
-    }
-
-    .mold-timer h4 {
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--color-white);
-      margin-bottom: 0.15rem;
-    }
-
-    .mold-timer p {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.7);
-      margin: 0;
-    }
-
-    /* ============================================
-       SECTION 5 — DECISION & CONVERSION
-       ============================================ */
-    .decision {
-      background-color: var(--color-cream);
-      padding: var(--section-pad-y) 0;
-    }
-
-    .decision-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: start;
-    }
-
-    .decision h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    /* Feature List */
-    .feature-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-    }
-
-    .feature-item {
-      display: flex;
-      gap: 0.85rem;
-      align-items: flex-start;
-    }
-
-    .feature-check {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background-color: var(--color-primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-dark);
-      font-size: 0.7rem;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-
-    .feature-item h4 {
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--color-dark);
-      margin-bottom: 0.2rem;
-    }
-
-    .feature-item p {
-      font-size: 0.85rem;
-      color: var(--color-secondary);
-      margin-bottom: 0;
-      line-height: 1.55;
-    }
-
-    /* FAQ */
-    .faq-block h3 {
-      font-family: var(--font-body);
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--color-dark);
-      margin-bottom: 1.25rem;
-    }
-
-    .faq-accordion {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .faq-item {
-      background-color: var(--color-white);
-      border-radius: 0.5rem;
-      border: 1px solid var(--color-light-tan);
-      overflow: hidden;
-    }
-
-    .faq-question {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 1.25rem;
-      cursor: pointer;
-      background: none;
-      border: none;
-      width: 100%;
-      text-align: left;
-    }
-
-    .faq-question h4 {
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--color-dark);
-      padding-right: 1rem;
-    }
-
-    .faq-question i {
-      color: var(--color-primary);
-      font-size: 0.85rem;
-      transition: transform 0.3s ease;
-      flex-shrink: 0;
-    }
-
-    .faq-item.open .faq-question i {
-      transform: rotate(180deg);
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease, padding 0.4s ease;
-      padding: 0 1.25rem;
-    }
-
-    .faq-item.open .faq-answer {
-      max-height: 300px;
-      padding: 0 1.25rem 1.25rem;
-    }
-
-    .faq-answer p {
-      font-size: 0.85rem;
-      color: var(--color-secondary);
-      line-height: 1.6;
-      margin: 0;
-    }
-
-    /* License Badge */
-    .license-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 1rem;
-      background-color: var(--color-deep-green);
-      color: var(--color-white);
-      font-size: 0.8rem;
-      font-weight: 600;
-      border-radius: 50px;
-      margin-top: 1.5rem;
-    }
-
-    .license-badge i {
-      color: var(--color-primary);
-    }
-
-    /* Final CTA */
-    .final-cta {
-      margin-top: 3rem;
-      padding: 2.5rem;
-      background-color: var(--color-dark);
-      border-radius: 1rem;
-      text-align: center;
-    }
-
-    .final-cta h3 {
-      color: var(--color-white);
-      font-family: var(--font-body);
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-    }
-
-    .final-cta p {
-      color: rgba(255,255,255,0.8);
-      font-size: 0.9rem;
-      margin-bottom: 1.5rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .final-cta-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    /* Trust Seals */
-    .trust-seals {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      margin-top: 1.5rem;
-    }
-
-    .trust-seal {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      color: rgba(255,255,255,0.7);
-      font-size: 0.75rem;
-      font-weight: 500;
-    }
-
-    .trust-seal i {
-      color: var(--color-primary);
-    }
-
-    /* ============================================
-       FIXED BOTTOM CTA BAR (Mobile Only)
-       ============================================ */
-    .fixed-cta-bar {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 999;
-      background-color: var(--color-deep-green);
-      padding: 0.75rem 1rem;
-      box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
-    }
-
-    .fixed-cta-bar .btn {
-      width: 100%;
-      padding: 0.85rem 1rem;
-      font-size: 0.9rem;
-    }
-
-    /* ============================================
-       RESPONSIVE — TABLET (768px - 1023px)
-       ============================================ */
-    @media (max-width: 1023px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
+  .hero-content { max-width:55%; }
+  .hero-visual { display:flex; width:40%; }
+
+  .service-grid { grid-template-columns:repeat(3, 1fr); }
+
+  .timeline {
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:20px;
+  }
+  .timeline-step {
+    flex:1 1 calc(33.333% - 14px);
+    min-width:280px;
+  }
+  .timeline::before {
+    content:'';
+    position:absolute;
+    left:0; right:0;
+    height:4px;
+    background:var(--color-teal);
+    top:40px;
+  }
+
+  .trust-wrap {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:32px;
+    align-items:start;
+  }
+  .technician-card { display:block; }
+
+  .local .container {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:48px;
+    align-items:start;
+  }
+
+  .trust-location .container {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:48px;
+    align-items:start;
+  }
+
+  .footer-grid { grid-template-columns:repeat(4, 1fr); }
+
+  .sticky-mobile-call { display:none !important; }
+  body { padding-bottom:0 !important; }
+}
+
+@media (max-width: 767px) {
+  .sticky-mobile-call { display:block; }
+  body { padding-bottom:60px; }
+  .mobile-tap-call { display:block; }
+}
+</style>
+
+<!-- ============================================
+     SCHEMA MARKUP
+     ============================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "Suncoast Plumbing of Florida, Inc",
+      "telephone": "727-453-8900",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "10568 N Statue Pt",
+        "addressLocality": "Dunnellon",
+        "addressRegion": "FL",
+        "postalCode": "34433"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "28.2",
+        "longitude": "-82.4"
+      },
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "priceRange": "$$",
+      "license": "CFC 1430728",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Pasco County FL"
+      },
+      "url": "https://www.suncoastplumbingfl.com/plumber-land-o-lakes-fl"
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Plumbing",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Plumbing Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Emergency Plumbing"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Leak Detection"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drain Cleaning"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sewer Line Repair"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Water Heater Repair"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Water Heater Installation"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pipe Repair"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Toilet Repair"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Repiping"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hydro Jetting"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Water Damage Restoration"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Septic Tank Pumping"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Water Softener Installation"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Water Filtration Installation"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gas Line Repair"}}
+        ]
       }
-
-      .hero h1 {
-        font-size: 2rem;
-        max-width: 100%;
-      }
-
-      .hero-visual {
-        max-width: 500px;
-        margin: 0 auto;
-      }
-
-      .hero-img-wrapper img {
-        height: 400px;
-      }
-
-      .landscape-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-
-      .emergency-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .timeline {
-        display: none;
-      }
-
-      .timeline-vertical {
-        display: flex;
-      }
-
-      .measures-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-      }
-
-      .decision-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How fast can a plumber arrive in Land O Lakes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suncoast Plumbing dispatches licensed technicians within 60 to 90 minutes for emergency calls in Land O Lakes and Pasco County."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the 79-dollar inspection fee cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The inspection fee covers a full diagnostic with video or thermal imaging. If you proceed with the repair, the 79 dollars is credited to your final bill."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle plumbing permits in Pasco County?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We pull all required permits and schedule inspections so you do not have to visit the county office."
+          }
+        }
+      ]
     }
-
-    /* ============================================
-       RESPONSIVE — MOBILE (< 768px)
-       ============================================ */
-    @media (max-width: 767px) {
-      :root {
-        --section-pad-y: 2.5rem;
-      }
-
-      /* Header */
-      .nav-desktop {
-        display: none;
-      }
-
-      .hamburger {
-        display: block;
-      }
-
-      .header-tier2 .location-bar span {
-        display: none;
-      }
-
-      .btn-call {
-        padding: 0.3rem 0.9rem;
-      }
-
-      .phone-number {
-        font-size: 0.85rem;
-      }
-
-      .btn-call-top span {
-        display: none;
-      }
-
-      /* Hero */
-      .hero {
-        min-height: auto;
-        padding-top: 145px;
-        padding-bottom: 2.5rem;
-      }
-
-      .hero h1 {
-        font-size: 1.75rem;
-      }
-
-      .emergency-list {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-visual {
-        max-width: 100%;
-      }
-
-      .hero-img-wrapper img {
-        height: 340px;
-      }
-
-      .emergency-badge {
-        font-size: 0.7rem;
-        padding: 0.5rem 1rem;
-        top: 1rem;
-        right: 1rem;
-      }
-
-      .response-badge {
-        font-size: 0.75rem;
-        padding: 0.6rem 1.25rem;
-      }
-
-      .hero-ctas {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .hero-ctas .btn-lg {
-        width: 100%;
-        text-align: center;
-      }
-
-      /* Landscape */
-      .landscape h2 {
-        font-size: 1.5rem;
-      }
-
-      .neighborhood-tags {
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        padding-bottom: 0.5rem;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      /* Emergency Grid */
-      .emergency-grid {
-        display: none;
-      }
-
-      .emergency-card-mobile {
-        display: block;
-        margin-bottom: 0.75rem;
-      }
-
-      .emergency-types h2 {
-        font-size: 1.5rem;
-      }
-
-      /* Measures */
-      .measures h2 {
-        font-size: 1.5rem;
-      }
-
-      .seasonal-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .equipment-block {
-        grid-template-columns: 1fr;
-      }
-
-      .equipment-block img {
-        height: 200px;
-      }
-
-      /* Decision */
-      .decision h2 {
-        font-size: 1.5rem;
-      }
-
-      .final-cta {
-        padding: 1.75rem 1.25rem;
-      }
-
-      .final-cta h3 {
-        font-size: 1.1rem;
-      }
-
-      .final-cta-buttons {
-        flex-direction: column;
-      }
-
-      .final-cta-buttons .btn {
-        width: 100%;
-      }
-
-      /* Fixed CTA bar */
-      .fixed-cta-bar {
-        display: block;
-      }
-
-      body {
-        padding-bottom: 70px;
-      }
-    }
-
-    /* ============================================
-       ACCESSIBILITY — Reduced Motion
-       ============================================ */
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-
-      .reveal, .reveal-left, .reveal-right, .reveal-scale {
-        opacity: 1;
-        transform: none;
-      }
-
-      .gauge-fill {
-        stroke-dashoffset: 85;
-      }
-
-      .timeline-fill {
-        width: 100%;
-      }
-    }
-
-    /* ============================================
-       RESPONSIVE — DESKTOP NAV VISIBILITY
-       ============================================ */
-    @media (min-width: 1024px) {
-      .mobile-menu {
-        display: none !important;
-      }
-    }
-  </style>
+  ]
+}
+</script>
 <base target="_blank">
 </head>
+
 <body>
 
-  <!-- ============================================
-       HEADER — STICKY TWO-TIER
-       ============================================ -->
-  <header class="header-sticky">
-    <!-- Tier 1 — Main Navigation -->
-    <div class="header-tier1">
-      <div class="container">
-        <a href="index.html" class="logo" aria-label="Suncoast Plumbing Home">
-          <div class="logo-icon">
-            <i class="fas fa-faucet-drip"></i>
+<!-- ============================================
+     HEADER — STICKY TWO-TIER
+     ============================================ -->
+<header class="header-sticky">
+  <!-- Tier 1 — Main Navigation -->
+  <div class="header-tier-1">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Suncoast Plumbing of Florida" style="height:70px;">
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <div class="dropdown">
+          <a href="#">Plumbing Services</a>
+          <div class="dropdown-menu">
+            <a href="emergency-plumbing.html">Emergency Plumbing</a>
+            <a href="leak-detection.html">Leak Detection</a>
+            <a href="drain-cleaning.html">Drain Cleaning</a>
+            <a href="sewer-line-repair.html">Sewer Line Repair</a>
+            <a href="water-heater-repair.html">Water Heater Repair</a>
+            <a href="water-heater-installation.html">Water Heater Installation</a>
+            <a href="pipe-repair.html">Pipe Repair</a>
+            <a href="toilet-repair.html">Toilet Repair</a>
+            <a href="repiping.html">Repiping</a>
+            <a href="hydro-jetting.html">Hydro Jetting</a>
+            <a href="water-damage-restoration.html">Water Damage Restoration</a>
+            <a href="septic-tank-pumping.html">Septic Tank Pumping</a>
+            <a href="water-softener-installation.html">Water Softener Installation</a>
+            <a href="water-filtration-installation.html">Water Filtration Installation</a>
+            <a href="gas-line-repair.html">Gas Line Repair</a>
           </div>
-          <div class="logo-text">
-            Suncoast Plumbing
-            <span>of Florida, Inc.</span>
-          </div>
-        </a>
+        </div>
+        <a href="contact-us.html">Contact us</a>
+      </nav>
 
-        <nav aria-label="Main navigation">
-          <ul class="nav-desktop">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li class="has-dropdown">
-              <a href="#">Plumbing Services</a>
-              <div class="dropdown">
-                <a href="emergency-plumbing.html">Emergency Plumbing</a>
-                <a href="leak-detection.html">Leak Detection</a>
-                <a href="drain-cleaning.html">Drain Cleaning</a>
-                <a href="sewer-line-repair.html">Sewer Line Repair</a>
-                <a href="water-heater-repair.html">Water Heater Repair</a>
-                <a href="water-heater-installation.html">Water Heater Installation</a>
-                <a href="pipe-repair.html">Pipe Repair</a>
-                <a href="toilet-repair.html">Toilet Repair</a>
-                <a href="repiping.html">Repiping</a>
-                <a href="hydro-jetting.html">Hydro Jetting</a>
-                <a href="water-damage-restoration.html">Water Damage Restoration</a>
-                <a href="septic-tank-pumping.html">Septic Tank Pumping</a>
-                <a href="water-softener-installation.html">Water Softener Installation</a>
-                <a href="water-filtration-installation.html">Water Filtration Installation</a>
-                <a href="gas-line-repair.html">Gas Line Repair</a>
-              </div>
-            </li>
-            <li><a href="contact-us.html">Contact us</a></li>
-          </ul>
-        </nav>
-
-        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
-          <i class="fas fa-bars" id="hamburgerIcon"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="about-us.html">About Us</a>
-      <button class="mobile-dropdown-toggle" id="mobileDropdownToggle" aria-expanded="false">
-        Plumbing Services
-        <i class="fas fa-chevron-down"></i>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <div class="mobile-submenu" id="mobileSubmenu">
+    </div>
+  </div>
+
+  <!-- Tier 2 — Location & CTA Bar -->
+  <div class="header-tier-2">
+    <div class="container">
+      <div class="location">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <span>Land O Lakes, FL</span>
+      </div>
+
+      <a href="tel:727-453-8900" class="btn-call">
+        <div class="btn-call-top">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <span>Call Now</span>
+        </div>
+        <div class="btn-call-bottom">
+          <span class="phone-number">727-453-8900</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+    <details class="mobile-accordion">
+      <summary>Plumbing Services</summary>
+      <div class="mobile-submenu">
         <a href="emergency-plumbing.html">Emergency Plumbing</a>
         <a href="leak-detection.html">Leak Detection</a>
         <a href="drain-cleaning.html">Drain Cleaning</a>
@@ -2174,953 +1517,702 @@
         <a href="water-filtration-installation.html">Water Filtration Installation</a>
         <a href="gas-line-repair.html">Gas Line Repair</a>
       </div>
-      <a href="contact-us.html">Contact us</a>
+    </details>
+    <a href="contact-us.html">Contact us</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================
+     SECTION 1: HERO BAND
+     ============================================ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="emergency-badge animate animate-delay-1">
+        <span class="pulse-dot"></span>
+        <span>Technicians Standing By</span>
+      </div>
+
+      <h1 class="animate animate-delay-2">Plumber Land O Lakes FL — <span>24/7 Emergency Plumbing You Can Trust</span></h1>
+
+      <p class="animate animate-delay-3">When a ruptured supply line floods your kitchen or your hot water stops working before work, you need a licensed plumber in Land O Lakes who answers the phone and shows up fast. We are a family-owned company serving Pasco County with same-day emergency service. Our dispatch team answers live calls day and night, and our technicians arrive within 60 to 90 minutes for true emergencies throughout Land O Lakes and surrounding areas.</p>
+
+      <p>Call 727-453-8900 now for immediate dispatch. If you are facing wastewater flooding, a gas line emergency, or a foundation leak, we treat every call as a priority and route the nearest available technician to your door.</p>
+
+      <div class="trust-badge-row">
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+          Licensed
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+          Insured &amp; Bonded
+        </span>
+        <span class="trust-badge">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          5 Years Serving Pasco
+        </span>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="tel:727-453-8900" class="btn-primary">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Call Now 727-453-8900
+        </a>
+        <a href="#schedule" class="btn-secondary">Schedule Online</a>
+      </div>
     </div>
 
-    <!-- Tier 2 — Location & CTA Bar -->
-    <div class="header-tier2">
-      <div class="container">
-        <div class="location-bar">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Land O Lakes, FL</span>
+    <div class="hero-visual">
+      <div class="visual-box">
+        <svg class="visual-icon" viewBox="0 0 24 24"><path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8zm0 18c-3.15 0-6-2.38-6-6.2 0-2.34 1.43-4.93 4.3-8.15 1.4 1.56 2.7 3.35 2.7 4.95 0 1.1.9 2 2 2s2-.9 2-2c0-2.76-2.9-5.71-6.53-8.89L12 2l.83.91C16.46 6.1 20 9.85 20 13.8c0 3.82-2.85 6.2-6 6.2z"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sticky bottom call bar on mobile -->
+<div class="sticky-mobile-call">
+  <a href="tel:727-453-8900">Call Now 727-453-8900</a>
+</div>
+
+<!-- ============================================
+     SECTION 2: SERVICES BAND
+     ============================================ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header">
+      <h2>Residential and Commercial Plumbing Services Across Pasco County</h2>
+    </div>
+
+    <div class="service-filters">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Emergency</button>
+      <button class="filter-btn">Repairs</button>
+      <button class="filter-btn">Systems</button>
+      <button class="filter-btn">Quality</button>
+    </div>
+
+    <h3>Emergency Repairs and Restoration</h3>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
         </div>
-        <a href="tel:727-453-8900" class="btn-call">
-          <div class="btn-call-top">
-            <i class="fas fa-phone"></i>
-            <span>Call Now</span>
-          </div>
-          <div class="btn-call-bottom">
-            <span class="phone-number">727-453-8900</span>
-          </div>
+        <div class="service-text">
+          <h4>Emergency Plumbing</h4>
+          <p>Ruptured pipes, sewer backups, gas emergencies, and foundation leaks demand immediate response. We dispatch within 60 to 90 minutes for true emergencies in Land O Lakes and surrounding communities.</p>
+          <a href="emergency-plumbing.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3c-4.8 0-9 3.86-9 9 0 2.12.74 4.07 2 5.62V21h14v-3.38c1.26-1.55 2-3.5 2-5.62 0-5.14-4.2-9-9-9zm0 16c-3.87 0-7-3.13-7-7 0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Water Damage Restoration</h4>
+          <p>From broken pipes to storm flooding, we extract water, dry structures, and document everything for your insurance claim.</p>
+          <a href="water-damage-restoration.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Gas Line Repair</h4>
+          <p>Rotten egg odor or hissing near a gas line is a critical emergency. Our team performs leak detection, pressure testing, and code-compliant repairs.</p>
+          <a href="gas-line-repair.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <h3>Leaks, Drains, and Sewers</h3>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Leak Detection</h4>
+          <p>Unexplained bill spikes and warm floor spots often signal hidden leaks under your foundation. We locate them with specialized imaging and electronic detection without unnecessary demolition.</p>
+          <a href="leak-detection.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M19.04 4.55l-1.42 1.42C16.07 4.74 14.12 4 12 4c-1.83 0-3.53.55-4.95 1.48l1.46 1.46C10.04 6.36 10.98 6 12 6c2.67 0 5.04 1.24 6.62 3.16l1.42-1.42C18.57 6.36 16.29 5 13.86 5c-.66 0-1.3.08-1.92.24l1.46 1.46c.39-.08.78-.12 1.18-.12 2.76 0 5.26 1.12 7.08 2.92l1.42-1.42C20.66 6.2 18.04 4.55 15.1 4.1l-1.42 1.42c.86.16 1.68.42 2.46.76l1.9-1.73zM12 13c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm6.95 2.36l-1.42 1.42C16.07 19.26 14.12 20 12 20c-1.83 0-3.53-.55-4.95-1.48l1.46-1.46C10.04 19.64 10.98 20 12 20c2.67 0 5.04-1.24 6.62-3.16l1.42 1.42C18.57 19.64 20.85 21 23.28 21c.66 0 1.3-.08 1.92-.24l-1.46-1.46c-.39.08-.78.12-1.18.12-2.76 0-5.26-1.12-7.08-2.92l-1.42 1.42C5.34 19.8 7.96 21.45 10.9 21.9l1.42-1.42c-.86-.16-1.68-.42-2.46-.76l-1.9 1.73z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Drain Cleaning</h4>
+          <p>Slow sinks, recurring clogs, and toilet overflows caused by mineral scale and biofilm buildup are cleared with visual inspection and professional snaking.</p>
+          <a href="drain-cleaning.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Sewer Line Repair</h4>
+          <p>Root masses, bellied pipes, and cracked clay lines are repaired with trenchless options when possible to save your yard.</p>
+          <a href="sewer-line-repair.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8zm0 18c-3.15 0-6-2.38-6-6.2 0-2.34 1.43-4.93 4.3-8.15 1.4 1.56 2.7 3.35 2.7 4.95 0 1.1.9 2 2 2s2-.9 2-2c0-2.76-2.9-5.71-6.53-8.89L12 2l.83.91C16.46 6.1 20 9.85 20 13.8c0 3.82-2.85 6.2-6 6.2z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Hydro Jetting</h4>
+          <p>Severe grease buildup and invasive roots are blasted away with high-pressure water jets, restoring full pipe capacity.</p>
+          <a href="hydro-jetting.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <h3>Water Heaters and Pipe Systems</h3>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Water Heater Repair</h4>
+          <p>Popping noises, rusty water, and temperature swings usually mean sediment buildup from mineral deposits. We repair heating elements, thermostats, and valves.</p>
+          <a href="water-heater-repair.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Water Heater Installation</h4>
+          <p>When your tank fails or you need more capacity, we install energy-efficient replacements sized for Florida homes. Average lifespan here is only 8 to 12 years because of mineral accumulation.</p>
+          <a href="water-heater-installation.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 8h-4V4H8v4H4v8h4v4h8v-4h4V8zM10 6h4v2h-4V6zm-2 8v-2h2v2H8zm6 0v-2h2v2h-2zm2-4h-2V8h2v2z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Pipe Repair</h4>
+          <p>Visible leaks, water stains on ceilings, and pressure drops are repaired with code-compliant methods and premium materials.</p>
+          <a href="pipe-repair.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 8h-4V4H8v4H4v8h4v4h8v-4h4V8zM10 6h4v2h-4V6zm-2 8v-2h2v2H8zm6 0v-2h2v2h-2zm2-4h-2V8h2v2z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Repiping</h4>
+          <p>Frequent pinhole leaks, rusty water, and insurance cancellations due to polybutylene pipes are solved with whole-home repipes using premium code-compliant materials.</p>
+          <a href="repiping.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Toilet Repair</h4>
+          <p>Running toilets, weak flushes, base leaks, and constant clogging are fixed with new internal components and proper wax ring seating.</p>
+          <a href="toilet-repair.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <h3>Water Quality and Septic</h3>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8zm0 18c-3.15 0-6-2.38-6-6.2 0-2.34 1.43-4.93 4.3-8.15 1.4 1.56 2.7 3.35 2.7 4.95 0 1.1.9 2 2 2s2-.9 2-2c0-2.76-2.9-5.71-6.53-8.89L12 2l.83.91C16.46 6.1 20 9.85 20 13.8c0 3.82-2.85 6.2-6 6.2z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Water Softener Installation</h4>
+          <p>Scale on faucets, dry skin, and premature appliance death are stopped by softening the very hard water common in Land O Lakes.</p>
+          <a href="water-softener-installation.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Water Filtration Installation</h4>
+          <p>Chlorine taste, sediment, and disinfection byproducts are removed with whole-home carbon filtration and reverse osmosis drinking systems.</p>
+          <a href="water-filtration-installation.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <div class="service-text">
+          <h4>Septic Tank Pumping</h4>
+          <p>Slow drains, foul yard odors, and standing water near the drainfield indicate a septic system under stress. We pump, inspect, and repair field lines.</p>
+          <a href="septic-tank-pumping.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-all">
+      <a href="services.html">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 3: PURPOSE AND TRUST BAND
+     ============================================ -->
+<section class="process" id="process">
+  <div class="container">
+    <h2>How Our Licensed Plumbers Work in Land O Lakes Homes</h2>
+
+    <div class="timeline">
+      <div class="timeline-step">
+        <span class="step-number">1</span>
+        <h4>Intake and Emergency Triage</h4>
+        <p>Our bilingual team answers immediately, day or night. Every call is triaged to determine whether you have a true emergency—ruptured pipe, sewer backup, gas leak, or foundation leak—or a scheduled repair. We confirm your address and dispatch the nearest licensed technician. If we are late, the trip fee is waived.</p>
+      </div>
+
+      <div class="timeline-step">
+        <span class="step-number">2</span>
+        <h4>Pre-Arrival Communication</h4>
+        <p>Your technician calls 15 minutes before arrival with his name, photo, and exact ETA. Trucks arrive fully stocked with PEX-A, Copper Type L, water heaters, drain machines, hydro jetters, thermal cameras, and electronic leak detectors. Shoe covers, drop cloths, and plastic barriers are standard on every job.</p>
+      </div>
+
+      <div class="timeline-step">
+        <span class="step-number">3</span>
+        <h4>On-Site Diagnosis with Advanced Technology</h4>
+        <p>We introduce ourselves, verify the problem, and inspect thoroughly using video pipe cameras, thermal imaging, and electronic leak detection. We identify root causes—mineral corrosion, foundation leak, or polybutylene failure—never guesswork. Findings are explained in plain language with photos and video evidence for complete transparency.</p>
+      </div>
+
+      <div class="timeline-step">
+        <span class="step-number">4</span>
+        <h4>Flat-Rate Estimate and Customer Approval</h4>
+        <p>You receive a detailed, flat-rate written estimate with multiple repair options: spot repair, reroute, or whole-house repipe. We use only PEX-A or Copper Type L materials. There are no hidden fees, no hourly surprises, and no pressure. Every question is answered honestly without overselling. You approve via signature or digital authorization before any work begins.</p>
+      </div>
+
+      <div class="timeline-step">
+        <span class="step-number">5</span>
+        <h4>Execution with Clean Work Guarantee</h4>
+        <p>Repairs are performed using drop cloths, shoe covers, and plastic barriers to protect your property. We handle all permits, use Florida Building Code-compliant methods, and conduct post-repair video inspection for drain and sewer work. Same-day completion is standard for most repairs. We test every fixture, check for leaks, and verify water pressure before cleanup. Post-repair video inspection is standard for all sewer line repair work.</p>
+      </div>
+
+      <div class="timeline-step">
+        <span class="step-number">6</span>
+        <h4>Completion, Warranty, and Follow-Up</h4>
+        <p>We clean the work area completely, remove all debris and old materials, and leave your home spotless. Written warranty documentation, insurance-ready invoices, and permit closure certificates are provided. A 48-hour follow-up call confirms satisfaction and verifies no recurrence. Your inspection fee is credited in full to the completed repair bill.</p>
+      </div>
+    </div>
+
+    <div class="trust-wrap">
+      <div class="trust-diff">
+        <h3>Trust Differentiators</h3>
+        <ul>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Bilingual Tagalog and English technicians available
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Thermal imaging and electronic leak detection standard
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Video pipe inspection for drains and sewers
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Background-checked, drug-tested, uniformed technicians only
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Workmanship warranty on every repair
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Permit handling included at no extra charge
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Licensed CFC 1430728 and fully insured and bonded
+          </li>
+        </ul>
+      </div>
+
+      <div class="technician-card">
+        <div class="tech-photo">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <h4>Licensed Technician</h4>
+        <p>Verified &amp; Background-Checked</p>
+        <span class="license-badge">CFC 1430728</span>
+      </div>
+    </div>
+
+    <div class="faq-band">
+      <h3>Featured Snippet Q&amp;A</h3>
+
+      <details class="faq-item">
+        <summary>How fast can a plumber arrive in Land O Lakes?</summary>
+        <p>Suncoast Plumbing dispatches licensed technicians within 60 to 90 minutes for emergency calls in Land O Lakes and Pasco County.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What does the 79-dollar inspection fee cover?</summary>
+        <p>The inspection fee covers a full diagnostic with video or thermal imaging. If you proceed with the repair, the 79 dollars is credited to your final bill.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you handle plumbing permits in Pasco County?</summary>
+        <p>Yes. We pull all required permits and schedule inspections so you do not have to visit the county office.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 4: LOCAL EXPERTISE BAND
+     ============================================ -->
+<section class="local" id="local">
+  <div class="container">
+    <div class="local-content">
+      <h2>Why Land O Lakes Homes Need a Pasco County Plumbing Specialist</h2>
+
+      <div class="local-intro">
+        <p>Land O Lakes sits on sandy limestone soil above the Upper Floridan Aquifer. That geology creates plumbing problems you will not find in other parts of Florida. The municipal water supply measures 13 to 21 grains per gallon of hardness, nearly double the threshold for very hard water. Over time, that mineral content corrodes copper pipes from the inside out, producing pinhole leaks that spray inside walls and under slab foundations.</p>
+
+        <p>The median home in Land O Lakes was built in 1992, squarely in the era when builders installed polybutylene and galvanized steel supply lines. Those materials are now notorious for premature failure. In older communities like Lake Padgett Estates, Stagecoach Village, Quail Hollow, and Wilderness Lake Preserve, we still find original galvanized supply lines and gray polybutylene that insurers now refuse to cover. Newer master-planned communities like Bexley and Connerton use modern PEX piping, but even those homes fight scale buildup on fixtures and water heaters because the hardness never changes.</p>
+
+        <p>Our tropical humidity stays above 70 percent year-round. When a leak starts, mold can colonize within 24 to 48 hours. After the back-to-back hurricanes Helene and Milton in 2024, Pasco County received over 585 million dollars in federal recovery funds because widespread flooding overwhelmed sewers and damaged foundations. The high water table and shifting soil after heavy rains stress pipes buried under concrete slabs, which is why foundation leak detection is one of our most frequent calls in ZIP codes 34637, 34638, and 34639.</p>
+
+        <p>If your water bill jumped unexpectedly or you hear running water when every tap is off, the cause is usually local. We do not guess. Our technicians use advanced acoustic and pressure-testing equipment to find the source without tearing up floors.</p>
+      </div>
+
+      <div class="local-links">
+        <a href="repiping.html">Learn about whole-home repiping options for aging polybutylene pipes.</a>
+        <a href="water-softener-installation.html">See how a water softener installation protects appliances against 13 to 17 grains per gallon hardness.</a>
+      </div>
+    </div>
+
+    <div class="local-visuals">
+      <div class="hardness-gauge">
+        <div class="gauge-label">Water Hardness — Land O Lakes</div>
+        <div class="gauge-track">
+          <div class="gauge-fill"></div>
+        </div>
+        <div class="gauge-ticks">
+          <span>0</span>
+          <span>7</span>
+          <span>14</span>
+          <span>21+</span>
+        </div>
+      </div>
+
+      <div class="local-cards">
+        <details class="local-card">
+          <summary>Hard Water Corrosion</summary>
+          <p>The municipal water supply measures 13 to 21 grains per gallon of hardness, nearly double the threshold for very hard water. Over time, that mineral content corrodes copper pipes from the inside out, producing pinhole leaks that spray inside walls and under slab foundations.</p>
+        </details>
+
+        <details class="local-card">
+          <summary>Shifting Soil &amp; Slab Leaks</summary>
+          <p>Land O Lakes sits on sandy limestone soil above the Upper Floridan Aquifer. The high water table and shifting soil after heavy rains stress pipes buried under concrete slabs, which is why foundation leak detection is one of our most frequent calls in ZIP codes 34637, 34638, and 34639.</p>
+        </details>
+
+        <details class="local-card">
+          <summary>Hurricane Season Damage</summary>
+          <p>After the back-to-back hurricanes Helene and Milton in 2024, Pasco County received over 585 million dollars in federal recovery funds because widespread flooding overwhelmed sewers and damaged foundations.</p>
+        </details>
+
+        <details class="local-card">
+          <summary>Aging Pipe Materials</summary>
+          <p>The median home in Land O Lakes was built in 1992, squarely in the era when builders installed polybutylene and galvanized steel supply lines. Those materials are now notorious for premature failure.</p>
+        </details>
+      </div>
+
+      <div class="neighborhoods">
+        <span>Lake Padgett Estates</span>
+        <span>Stagecoach Village</span>
+        <span>Quail Hollow</span>
+        <span>Wilderness Lake Preserve</span>
+        <span>Bexley</span>
+        <span>Connerton</span>
+      </div>
+
+      <div class="before-after">
+        <div class="ba-box">
+          <h5>Before</h5>
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+          <p>Corroded galvanized &amp; polybutylene</p>
+        </div>
+        <div class="ba-box">
+          <h5>After</h5>
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          <p>Clean PEX-A installation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 5: PREMIUM CTA BAND WITH FORM
+     ============================================ -->
+<section class="cta-band" id="schedule">
+  <div class="container">
+    <h2>Schedule Your Plumbing Inspection in Land O Lakes</h2>
+    <p class="cta-sub">Not every plumbing issue is an emergency. If you have a running toilet, slow drain, or want a whole-home water quality assessment, schedule a convenient appointment. Our 79-dollar inspection fee is credited to your repair if you proceed.</p>
+
+    <div class="mobile-tap-call">
+      <a href="tel:727-453-8900">
+        <span class="call-label">727-453-8900</span>
+        <span class="call-sub">Call for 60-90 min emergency response</span>
+      </a>
+    </div>
+
+    <form class="form-grid" action="mailto:rrnollab25@gmail.com" method="post" enctype="text/plain" id="contactForm">
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder=" " required>
+        <label for="name">Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder=" " required>
+        <label for="email">Email</label>
+      </div>
+
+      <div class="form-group">
+        <input type="tel" id="phone" name="phone" placeholder=" " required>
+        <label for="phone">Phone</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="address" name="address" placeholder=" " required>
+        <label for="address">Street Address</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="city" name="city" placeholder=" " required>
+        <label for="city">City</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="zip" name="zip" placeholder=" " required>
+        <label for="zip">ZIP Code</label>
+      </div>
+
+      <div class="form-group full-width">
+        <textarea id="message" name="message" placeholder=" " required></textarea>
+        <label for="message">How can we help?</label>
+      </div>
+
+      <div class="form-group full-width">
+        <button type="submit" class="btn-submit">Send Message</button>
+      </div>
+    </form>
+
+    <p class="form-note">For immediate emergencies, call <a href="tel:727-453-8900">727-453-8900</a>. We answer 24 hours a day, 7 days a week, including holidays.</p>
+  </div>
+</section>
+
+<div class="toast" id="toast">Message sent. We will call you within 30 minutes during business hours.</div>
+
+<!-- ============================================
+     SECTION 6: TRUST AND LOCATION BAND
+     ============================================ -->
+<section class="trust-location" id="areas">
+  <div class="container">
+    <div class="location-content">
+      <h2>
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Trusted Plumbing Service Throughout Pasco County and Beyond
+      </h2>
+      <p>We dispatch to every corner of Pasco County. Whether you live in a mature community with original polybutylene pipes or a new master-planned development with modern PEX, our technicians carry the parts and tools to fix your problem on the first visit.</p>
+
+      <div class="area-tags">
+        <span class="area-tag">Aripeka</span>
+        <span class="area-tag">Bayonet Point</span>
+        <span class="area-tag">Beacon Square</span>
+        <span class="area-tag">Connerton</span>
+        <span class="area-tag">Crystal Springs</span>
+        <span class="area-tag">Dade City</span>
+        <span class="area-tag">Dade City North</span>
+        <span class="area-tag">Elfers</span>
+        <span class="area-tag">Heritage Pines</span>
+        <span class="area-tag">Holiday</span>
+        <span class="area-tag">Hudson</span>
+        <span class="area-tag">Jasmine Estates</span>
+        <span class="area-tag">Key Vista</span>
+        <span class="area-tag">Lacoochee</span>
+        <span class="area-tag">Land O Lakes</span>
+        <span class="area-tag">Meadow Oaks</span>
+        <span class="area-tag">Moon Lake</span>
+        <span class="area-tag">New Port Richey</span>
+        <span class="area-tag">New Port Richey East</span>
+        <span class="area-tag">Odessa</span>
+        <span class="area-tag">Pasadena Hills</span>
+        <span class="area-tag">Port Richey</span>
+        <span class="area-tag">Quail Ridge</span>
+        <span class="area-tag">River Ridge</span>
+        <span class="area-tag">San Antonio</span>
+        <span class="area-tag">Shady Hills</span>
+        <span class="area-tag">St. Leo</span>
+        <span class="area-tag">Trilby</span>
+        <span class="area-tag">Trinity</span>
+        <span class="area-tag">Wesley Chapel</span>
+        <span class="area-tag">Zephyrhills</span>
+        <span class="area-tag">Zephyrhills North</span>
+        <span class="area-tag">Zephyrhills South</span>
+        <span class="area-tag">Zephyrhills West</span>
+      </div>
+    </div>
+
+    <div class="location-map">
+      <div class="map-frame">
+        <iframe src="https://maps.google.com/maps?q=Land+O+Lakes,+FL&amp;output=embed" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="map-link">
+        <a href="https://maps.google.com/maps?q=10568+N+Statue+Pt,+Dunnellon,+FL+34433" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Get directions to our dispatch office
         </a>
       </div>
     </div>
-  </header>
-
-  <!-- ============================================
-       SECTION 1: EMERGENCY HERO BAND
-       ============================================ -->
-  <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge anim-fade-up">
-            <i class="fas fa-circle"></i>
-            Licensed CFC 1430728 &middot; Family-Owned Since 2021
-          </div>
-
-          <h1 class="anim-fade-left">Emergency Plumber Land O Lakes FL — 24/7 Same-Day Response</h1>
-
-          <p class="anim-fade-up anim-fade-up-1">When a ruptured pipe sprays water across your kitchen floor or raw sewage backs up into your bathroom, waiting is not an option. We answer live calls 24 hours a day, 7 days a week, and dispatch licensed technicians to Land O Lakes homes within 60 to 90 minutes. No answering service. No voicemail. A real person triages your call and routes the nearest available technician immediately.</p>
-
-          <div class="hero-label anim-fade-up anim-fade-up-2">Emergency situations we handle right now:</div>
-          <ul class="emergency-list anim-fade-up anim-fade-up-3">
-            <li><i class="fas fa-circle"></i> Burst pipes and active leaks that cannot be shut off</li>
-            <li><i class="fas fa-circle"></i> Sewage backup inside the home</li>
-            <li><i class="fas fa-circle"></i> Complete loss of water pressure throughout the house</li>
-            <li><i class="fas fa-circle"></i> Water heater tank leaking heavily</li>
-            <li><i class="fas fa-circle"></i> Discolored water indicating pipe corrosion or contamination</li>
-            <li><i class="fas fa-circle"></i> Sagging ceiling from hidden leaks above</li>
-            <li><i class="fas fa-circle"></i> Standing water requiring immediate extraction</li>
-            <li><i class="fas fa-circle"></i> Gas smell near plumbing fixtures</li>
-            <li><i class="fas fa-circle"></i> Multiple fixtures backing up simultaneously</li>
-            <li><i class="fas fa-circle"></i> Water spreading through walls or floors</li>
-            <li><i class="fas fa-circle"></i> Sound of running water when every tap is turned off</li>
-          </ul>
-
-          <p class="anim-fade-up anim-fade-up-3" style="color: var(--color-primary); font-weight: 500; margin-bottom: 1.5rem;">If you are experiencing any of these right now, call 727-453-8900. Our dispatcher will assess whether you need immediate dispatch or if the situation can be safely contained until scheduled arrival.</p>
-
-          <p class="anim-fade-up anim-fade-up-3" style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.75rem;">Trust indicators: Licensed CFC 1430728. Fully insured and bonded. Family-owned since 2021.</p>
-
-          <div class="hero-ctas anim-fade-up anim-fade-up-4">
-            <a href="tel:727-453-8900" class="btn btn-primary btn-lg">
-              <i class="fas fa-phone"></i> Call 727-453-8900
-            </a>
-            <a href="#what-counts">What counts as a plumbing emergency?</a>
-          </div>
-        </div>
-
-        <div class="hero-visual anim-fade-right">
-          <div class="hero-img-wrapper">
-            <img src="images/hero-plumber.jpg" alt="Emergency plumber technician ready for dispatch in Land O Lakes FL" loading="eager">
-            <div class="emergency-badge">
-              <i class="fas fa-broadcast-tower"></i> Technicians Standing By — Live Dispatch
-            </div>
-            <div class="response-badge">
-              <i class="fas fa-clock"></i> 60-90 Min or Free
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       SECTION 2: PASCO COUNTY EMERGENCY LANDSCAPE
-       ============================================ -->
-  <section class="landscape" id="landscape">
-    <div class="container">
-      <div class="landscape-grid">
-        <div class="landscape-left">
-          <h2 class="reveal-left">Why Land O Lakes Homes Face Unique Plumbing Emergencies</h2>
-
-          <p class="reveal stagger-1">Land O Lakes sits on sandy limestone soil above the Upper Floridan Aquifer. That geology creates emergency plumbing problems you will not find in other parts of Florida. The municipal water supply measures 13 to 21 grains per gallon of hardness, nearly double the threshold for very hard water. Over time, that mineral content corrodes copper pipes from the inside out, producing pinhole leaks that spray inside walls and under slab foundations without warning.</p>
-
-          <!-- Water Hardness Gauge -->
-          <div class="gauge-wrapper reveal stagger-2" id="gaugeWrapper">
-            <div class="gauge-circle" id="gaugeCircle">
-              <svg viewBox="0 0 100 100">
-                <circle class="gauge-bg" cx="50" cy="50" r="45"/>
-                <circle class="gauge-fill" cx="50" cy="50" r="45" id="gaugeFillCircle"/>
-              </svg>
-              <div class="gauge-value">13-21</div>
-            </div>
-            <div class="gauge-info">
-              <h4>Water Hardness</h4>
-              <p>Grains per gallon — nearly double the "very hard" threshold</p>
-            </div>
-          </div>
-
-          <p class="reveal stagger-2">The median home in Land O Lakes was built in 1992, squarely in the era when builders installed polybutylene and galvanized steel supply lines. Those materials are now notorious for sudden failure. In older communities like Lake Padgett Estates, Stagecoach Village, Quail Hollow, and Wilderness Lake Preserve, we still find original galvanized supply lines and gray polybutylene that insurers now refuse to cover. When these pipes fail, they often fail catastrophically, flooding homes before the main shut-off can be reached.</p>
-
-          <p class="reveal stagger-3">Our tropical humidity stays above 70 percent year-round. When a leak starts, mold can colonize within 24 to 48 hours. After the back-to-back hurricanes Helene and Milton in 2024, Pasco County received over 585 million dollars in federal recovery funds because widespread flooding overwhelmed sewers and damaged foundations. The high water table and shifting soil after heavy rains stress pipes buried under concrete slabs, which is why foundation leak emergencies are one of our most frequent calls in ZIP codes 34637, 34638, and 34639.</p>
-
-          <p class="reveal stagger-3">Pasco County leads all 67 Florida counties in sinkhole claims with 154 closed claims, earning the region the nickname Sinkhole Alley alongside Hernando and Hillsborough Counties. Sinkhole activity can cause sudden foundation collapse, pipe rupture, and catastrophic water and sewage line damage that requires immediate plumbing assessment before structural failure worsens.</p>
-
-          <p class="reveal stagger-4">If your water bill jumped unexpectedly or you hear running water when every tap is off, the cause is usually local and urgent. We do not guess. Our technicians use advanced acoustic and pressure-testing equipment to find the source without tearing up floors.</p>
-
-          <div class="neighborhood-tags reveal stagger-4">
-            <span class="tag-pill">Lake Padgett Estates</span>
-            <span class="tag-pill">Stagecoach Village</span>
-            <span class="tag-pill">Quail Hollow</span>
-            <span class="tag-pill">Wilderness Lake Preserve</span>
-            <span class="tag-pill">Bexley</span>
-            <span class="tag-pill">Connerton</span>
-          </div>
-
-          <div class="internal-links reveal stagger-5">
-            <a href="water-damage-restoration.html"><i class="fas fa-arrow-right"></i> Learn about our water damage restoration process for homes affected by flooding and storm damage.</a>
-            <a href="repiping.html"><i class="fas fa-arrow-right"></i> See how whole-home repiping eliminates emergency pipe failure risks in aging communities.</a>
-          </div>
-        </div>
-
-        <div class="landscape-right">
-          <div class="accordion-cards">
-            <!-- Hard Water Corrosion -->
-            <div class="accordion-card reveal-right stagger-1">
-              <button class="accordion-header" aria-expanded="false">
-                <h4><i class="fas fa-tint" style="color: var(--color-primary); margin-right: 0.5rem;"></i> Hard Water Corrosion</h4>
-                <i class="fas fa-chevron-down"></i>
-              </button>
-              <div class="accordion-body">
-                <p>At 13 to 21 grains per gallon, Land O Lakes water is nearly double the threshold for very hard water. Mineral deposits corrode copper pipes from the inside, creating pinhole leaks that burst without warning inside walls and under slabs.</p>
-              </div>
-            </div>
-
-            <!-- Shifting Soil & Slab Leaks -->
-            <div class="accordion-card reveal-right stagger-2">
-              <button class="accordion-header" aria-expanded="false">
-                <h4><i class="fas fa-house-crack" style="color: var(--color-primary); margin-right: 0.5rem;"></i> Shifting Soil &amp; Slab Leaks</h4>
-                <i class="fas fa-chevron-down"></i>
-              </button>
-              <div class="accordion-body">
-                <p>Sandy limestone soil shifts after heavy rains, stressing pipes under concrete slab foundations. Homes built from the mid-1990s through 2005 with copper supply runs inside the slab develop pinhole leaks after 20-plus years of pressure and corrosion.</p>
-              </div>
-            </div>
-
-            <!-- Hurricane Season Damage -->
-            <div class="accordion-card reveal-right stagger-3">
-              <button class="accordion-header" aria-expanded="false">
-                <h4><i class="fas fa-cloud-showers-heavy" style="color: var(--color-primary); margin-right: 0.5rem;"></i> Hurricane Season Damage</h4>
-                <i class="fas fa-chevron-down"></i>
-              </button>
-              <div class="accordion-body">
-                <p>After hurricanes Helene and Milton in 2024, Pasco County received over 585 million dollars in federal recovery funds. Widespread flooding overwhelmed sewers, damaged foundations, and created emergency plumbing situations across ZIP codes 34637, 34638, and 34639.</p>
-              </div>
-            </div>
-
-            <!-- Sinkhole Risk -->
-            <div class="accordion-card reveal-right stagger-4">
-              <button class="accordion-header" aria-expanded="false">
-                <h4><i class="fas fa-mound" style="color: var(--color-primary); margin-right: 0.5rem;"></i> Sinkhole Risk</h4>
-                <i class="fas fa-chevron-down"></i>
-              </button>
-              <div class="accordion-body">
-                <p>Pasco County leads all 67 Florida counties in sinkhole claims with 154 closed claims, earning the region the nickname Sinkhole Alley alongside Hernando and Hillsborough Counties. Sinkhole activity can cause sudden foundation collapse and catastrophic pipe damage.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Before/After Pipe Images -->
-          <div class="reveal stagger-5" style="margin-top: 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-            <div>
-              <img src="images/pipe-corrosion.jpg" alt="Corroded copper pipe with mineral buildup and pinhole leak" style="width: 100%; height: 160px; object-fit: cover; border-radius: 0.5rem;">
-              <p style="font-size: 0.75rem; color: var(--color-secondary); margin-top: 0.4rem; text-align: center;">Corroded copper pipe</p>
-            </div>
-            <div>
-              <img src="images/clean-pex.jpg" alt="New clean PEX plumbing installation" style="width: 100%; height: 160px; object-fit: cover; border-radius: 0.5rem;">
-              <p style="font-size: 0.75rem; color: var(--color-secondary); margin-top: 0.4rem; text-align: center;">Clean PEX replacement</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       SECTION 3: EMERGENCY TYPES AND RESPONSE PROTOCOL
-       ============================================ -->
-  <section class="emergency-types" id="what-counts">
-    <div class="container">
-      <h2 class="reveal">Emergency Plumbing Situations We Handle in Land O Lakes</h2>
-      <p class="section-subtitle reveal stagger-1">Click any emergency type to learn how we respond</p>
-
-      <!-- Desktop Grid -->
-      <div class="emergency-grid">
-        <!-- Burst Pipes -->
-        <div class="emergency-card reveal stagger-1">
-          <div class="card-header-row">
-            <span class="severity-dot red"></span>
-            <h3>Burst Pipes and Active Leaks</h3>
-          </div>
-          <div class="label trigger">Trigger</div>
-          <p>Rare cold snaps, high water pressure, or aging pipe failure cause sudden ruptures. When the main shut-off valve is broken and water continues flowing, damage escalates within minutes.</p>
-          <div class="label action">Immediate Action</div>
-          <p>Our technician locates the street curb stop or emergency valve to halt water flow. Temporary pipe patching or clamping is applied if same-day permanent repair is not possible.</p>
-          <div class="label diagnostic">Diagnostic</div>
-          <p>Electronic acoustic leak detection and pressure testing identify the rupture point without unnecessary demolition.</p>
-        </div>
-
-        <!-- Slab Leaks -->
-        <div class="emergency-card reveal stagger-2">
-          <div class="card-header-row">
-            <span class="severity-dot red"></span>
-            <h3>Slab Leaks</h3>
-          </div>
-          <div class="label trigger">Trigger</div>
-          <p>Sandy limestone soil shifts after heavy rains, stressing pipes buried under concrete slab foundations. Mid-1990s through 2005 homes with copper supply runs inside the slab develop pinhole leaks after 20-plus years.</p>
-          <div class="label action">Immediate Action</div>
-          <p>Water shut-off and dehumidifier deployment to prevent mold colonization within 24 to 48 hours. Containment barriers protect unaffected areas.</p>
-          <div class="label diagnostic">Diagnostic</div>
-          <p>Thermal imaging cameras detect temperature differences from hidden moisture. Electronic leak detection pinpoints the exact location before any concrete is opened.</p>
-        </div>
-
-        <!-- Sewage Backups -->
-        <div class="emergency-card reveal stagger-3">
-          <div class="card-header-row">
-            <span class="severity-dot red"></span>
-            <h3>Sewage Backups</h3>
-          </div>
-          <div class="label trigger">Trigger</div>
-          <p>Main sewer line blockage from tree root intrusion, grease buildup, or collapsed clay pipes causes raw sewage to enter the home.</p>
-          <div class="label action">Immediate Action</div>
-          <p>Immediate containment with plastic barriers and hospital-grade disinfectants to prevent contamination spread. Emergency pumping and extraction begin.</p>
-          <div class="label diagnostic">Diagnostic</div>
-          <p>Video pipe inspection identifies the exact cause and location of the blockage without guesswork.</p>
-        </div>
-
-        <!-- Water Heater Failures -->
-        <div class="emergency-card reveal stagger-4">
-          <div class="card-header-row">
-            <span class="severity-dot red"></span>
-            <h3>Water Heater Failures</h3>
-          </div>
-          <div class="label trigger">Trigger</div>
-          <p>Hard water at 13 to 17 grains per gallon accelerates sediment buildup, causing premature tank failure. Tank leaks threaten slab foundation water damage.</p>
-          <div class="label action">Immediate Action</div>
-          <p>Water and gas shut-off. Extraction of standing water around the unit. Temporary bypass if safe.</p>
-          <div class="label diagnostic">Diagnostic</div>
-          <p>Visual inspection for tank corrosion, pressure relief valve testing, and heating element assessment.</p>
-        </div>
-
-        <!-- Broken Shut-Off Valves -->
-        <div class="emergency-card reveal stagger-5">
-          <div class="card-header-row">
-            <span class="severity-dot orange"></span>
-            <h3>Broken Shut-Off Valves</h3>
-          </div>
-          <div class="label trigger">Trigger</div>
-          <p>Aging or corroded main shut-off valves fail during emergency attempts to stop water flow.</p>
-          <div class="label action">Immediate Action</div>
-          <p>Emergency curb stop or street valve activation to halt water supply. Temporary valve replacement if parts are available.</p>
-          <div class="label diagnostic">Diagnostic</div>
-          <p>Pressure testing and valve mechanism inspection.</p>
-        </div>
-
-        <!-- No Hot Water -->
-        <div class="emergency-card reveal stagger-6">
-          <div class="card-header-row">
-            <span class="severity-dot orange"></span>
-            <h3>No Hot Water</h3>
-          </div>
-          <div class="label trigger">Trigger</div>
-          <p>Complete loss of hot water in commercial properties and multi-family units, or sediment-flooded heating elements in residential tanks.</p>
-          <div class="label action">Immediate Action</div>
-          <p>System bypass assessment and temporary heating solutions if available.</p>
-          <div class="label diagnostic">Diagnostic</div>
-          <p>Heating element testing, thermostat calibration, and sediment level inspection.</p>
-        </div>
-
-        <!-- Severe Drain Clogs -->
-        <div class="emergency-card reveal stagger-1" style="grid-column: 2;">
-          <div class="card-header-row">
-            <span class="severity-dot orange"></span>
-            <h3>Severe Drain Clogs and Backups</h3>
-          </div>
-          <div class="label trigger">Trigger</div>
-          <p>Mineral scale and biofilm buildup from hard water, or holiday-season grease overload, causes overflow affecting multiple fixtures.</p>
-          <div class="label action">Immediate Action</div>
-          <p>Immediate snaking or hydro jetting to restore flow and prevent overflow damage.</p>
-          <div class="label diagnostic">Diagnostic</div>
-          <p>Video pipe inspection to identify the exact obstruction and pipe condition.</p>
-        </div>
-      </div>
-
-      <!-- Mobile Accordion Cards -->
-      <div style="display: none;" id="emergencyMobile">
-        <div class="emergency-card-mobile">
-          <button class="mobile-card-header" aria-expanded="false">
-            <div class="card-title-row">
-              <span class="severity-dot red"></span>
-              <h3>Burst Pipes and Active Leaks</h3>
-            </div>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="mobile-card-body">
-            <div class="label trigger">Trigger</div>
-            <p>Rare cold snaps, high water pressure, or aging pipe failure cause sudden ruptures. When the main shut-off valve is broken and water continues flowing, damage escalates within minutes.</p>
-            <div class="label action">Immediate Action</div>
-            <p>Our technician locates the street curb stop or emergency valve to halt water flow. Temporary pipe patching or clamping is applied if same-day permanent repair is not possible.</p>
-            <div class="label diagnostic">Diagnostic</div>
-            <p>Electronic acoustic leak detection and pressure testing identify the rupture point without unnecessary demolition.</p>
-          </div>
-        </div>
-
-        <div class="emergency-card-mobile">
-          <button class="mobile-card-header" aria-expanded="false">
-            <div class="card-title-row">
-              <span class="severity-dot red"></span>
-              <h3>Slab Leaks</h3>
-            </div>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="mobile-card-body">
-            <div class="label trigger">Trigger</div>
-            <p>Sandy limestone soil shifts after heavy rains, stressing pipes buried under concrete slab foundations. Mid-1990s through 2005 homes with copper supply runs inside the slab develop pinhole leaks after 20-plus years.</p>
-            <div class="label action">Immediate Action</div>
-            <p>Water shut-off and dehumidifier deployment to prevent mold colonization within 24 to 48 hours. Containment barriers protect unaffected areas.</p>
-            <div class="label diagnostic">Diagnostic</div>
-            <p>Thermal imaging cameras detect temperature differences from hidden moisture. Electronic leak detection pinpoints the exact location before any concrete is opened.</p>
-          </div>
-        </div>
-
-        <div class="emergency-card-mobile">
-          <button class="mobile-card-header" aria-expanded="false">
-            <div class="card-title-row">
-              <span class="severity-dot red"></span>
-              <h3>Sewage Backups</h3>
-            </div>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="mobile-card-body">
-            <div class="label trigger">Trigger</div>
-            <p>Main sewer line blockage from tree root intrusion, grease buildup, or collapsed clay pipes causes raw sewage to enter the home.</p>
-            <div class="label action">Immediate Action</div>
-            <p>Immediate containment with plastic barriers and hospital-grade disinfectants to prevent contamination spread. Emergency pumping and extraction begin.</p>
-            <div class="label diagnostic">Diagnostic</div>
-            <p>Video pipe inspection identifies the exact cause and location of the blockage without guesswork.</p>
-          </div>
-        </div>
-
-        <div class="emergency-card-mobile">
-          <button class="mobile-card-header" aria-expanded="false">
-            <div class="card-title-row">
-              <span class="severity-dot red"></span>
-              <h3>Water Heater Failures</h3>
-            </div>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="mobile-card-body">
-            <div class="label trigger">Trigger</div>
-            <p>Hard water at 13 to 17 grains per gallon accelerates sediment buildup, causing premature tank failure. Tank leaks threaten slab foundation water damage.</p>
-            <div class="label action">Immediate Action</div>
-            <p>Water and gas shut-off. Extraction of standing water around the unit. Temporary bypass if safe.</p>
-            <div class="label diagnostic">Diagnostic</div>
-            <p>Visual inspection for tank corrosion, pressure relief valve testing, and heating element assessment.</p>
-          </div>
-        </div>
-
-        <div class="emergency-card-mobile">
-          <button class="mobile-card-header" aria-expanded="false">
-            <div class="card-title-row">
-              <span class="severity-dot orange"></span>
-              <h3>Broken Shut-Off Valves</h3>
-            </div>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="mobile-card-body">
-            <div class="label trigger">Trigger</div>
-            <p>Aging or corroded main shut-off valves fail during emergency attempts to stop water flow.</p>
-            <div class="label action">Immediate Action</div>
-            <p>Emergency curb stop or street valve activation to halt water supply. Temporary valve replacement if parts are available.</p>
-            <div class="label diagnostic">Diagnostic</div>
-            <p>Pressure testing and valve mechanism inspection.</p>
-          </div>
-        </div>
-
-        <div class="emergency-card-mobile">
-          <button class="mobile-card-header" aria-expanded="false">
-            <div class="card-title-row">
-              <span class="severity-dot orange"></span>
-              <h3>No Hot Water</h3>
-            </div>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="mobile-card-body">
-            <div class="label trigger">Trigger</div>
-            <p>Complete loss of hot water in commercial properties and multi-family units, or sediment-flooded heating elements in residential tanks.</p>
-            <div class="label action">Immediate Action</div>
-            <p>System bypass assessment and temporary heating solutions if available.</p>
-            <div class="label diagnostic">Diagnostic</div>
-            <p>Heating element testing, thermostat calibration, and sediment level inspection.</p>
-          </div>
-        </div>
-
-        <div class="emergency-card-mobile">
-          <button class="mobile-card-header" aria-expanded="false">
-            <div class="card-title-row">
-              <span class="severity-dot orange"></span>
-              <h3>Severe Drain Clogs and Backups</h3>
-            </div>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="mobile-card-body">
-            <div class="label trigger">Trigger</div>
-            <p>Mineral scale and biofilm buildup from hard water, or holiday-season grease overload, causes overflow affecting multiple fixtures.</p>
-            <div class="label action">Immediate Action</div>
-            <p>Immediate snaking or hydro jetting to restore flow and prevent overflow damage.</p>
-            <div class="label diagnostic">Diagnostic</div>
-            <p>Video pipe inspection to identify the exact obstruction and pipe condition.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Dispatch Protocol -->
-      <div class="protocol" id="protocol">
-        <h3 class="reveal">Emergency Dispatch Protocol</h3>
-
-        <!-- Desktop Timeline -->
-        <div class="timeline">
-          <div class="timeline-fill" id="timelineFill"></div>
-
-          <div class="timeline-step active reveal stagger-1">
-            <div class="step-number">1</div>
-            <h4>24/7 Live Answer</h4>
-            <p>No voicemail, no answering service. A real person answers every call.</p>
-          </div>
-
-          <div class="timeline-step active reveal stagger-2">
-            <div class="step-number">2</div>
-            <h4>Immediate Triage</h4>
-            <p>The dispatcher asks: What is the emergency? Is there an active leak? Is the water shut off? Is there sewage backup? Are children or elderly present? Exact address and contact number?</p>
-          </div>
-
-          <div class="timeline-step active reveal stagger-3">
-            <div class="step-number">3</div>
-            <h4>Pre-Arrival Call</h4>
-            <p>Technician calls 15 minutes before arrival with name, photo, and ETA.</p>
-          </div>
-
-          <div class="timeline-step active reveal stagger-4">
-            <div class="step-number">4</div>
-            <h4>Fully Stocked Truck Arrival</h4>
-            <p>Trucks carry PEX-A, Copper Type L, water heaters, drain machines, hydro jetters, thermal cameras, and electronic leak detectors.</p>
-          </div>
-
-          <div class="timeline-step active reveal stagger-5">
-            <div class="step-number">5</div>
-            <h4>Direct Insurance Coordination</h4>
-            <p>For water damage emergencies, we document damage and provide insurance-ready reports immediately.</p>
-          </div>
-
-          <div class="timeline-step active reveal stagger-6">
-            <div class="step-number">6</div>
-            <h4>Post-Emergency Follow-Up</h4>
-            <p>48-hour follow-up call confirms resolution and checks for recurrence.</p>
-          </div>
-        </div>
-
-        <!-- Vertical Timeline (Tablet/Mobile) -->
-        <div class="timeline-vertical">
-          <div class="timeline-v-step active reveal stagger-1">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h4>24/7 Live Answer</h4>
-              <p>No voicemail, no answering service. A real person answers every call.</p>
-            </div>
-          </div>
-
-          <div class="timeline-v-step active reveal stagger-2">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h4>Immediate Triage</h4>
-              <p>The dispatcher asks: What is the emergency? Is there an active leak? Is the water shut off? Is there sewage backup? Are children or elderly present? Exact address and contact number?</p>
-            </div>
-          </div>
-
-          <div class="timeline-v-step active reveal stagger-3">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h4>Pre-Arrival Call</h4>
-              <p>Technician calls 15 minutes before arrival with name, photo, and ETA.</p>
-            </div>
-          </div>
-
-          <div class="timeline-v-step active reveal stagger-4">
-            <div class="step-number">4</div>
-            <div class="step-content">
-              <h4>Fully Stocked Truck Arrival</h4>
-              <p>Trucks carry PEX-A, Copper Type L, water heaters, drain machines, hydro jetters, thermal cameras, and electronic leak detectors.</p>
-            </div>
-          </div>
-
-          <div class="timeline-v-step active reveal stagger-5">
-            <div class="step-number">5</div>
-            <div class="step-content">
-              <h4>Direct Insurance Coordination</h4>
-              <p>For water damage emergencies, we document damage and provide insurance-ready reports immediately.</p>
-            </div>
-          </div>
-
-          <div class="timeline-v-step active reveal stagger-6">
-            <div class="step-number">6</div>
-            <div class="step-content">
-              <h4>Post-Emergency Follow-Up</h4>
-              <p>48-hour follow-up call confirms resolution and checks for recurrence.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       SECTION 4: TEMPORARY MEASURES AND DAMAGE PREVENTION
-       ============================================ -->
-  <section class="measures" id="measures">
-    <div class="container">
-      <div class="measures-grid">
-        <div class="measures-left">
-          <h2 class="reveal-left">How We Stop Emergency Damage Before Permanent Repair</h2>
-
-          <p class="reveal stagger-1" style="font-size: 0.95rem; margin-bottom: 2rem;">When a plumbing emergency strikes, the first minutes determine whether you face a simple repair or a 50,000-dollar foundation restoration. Our technicians are trained to implement immediate damage control using industrial-grade equipment and containment protocols designed for Florida's tropical climate.</p>
-
-          <div class="measure-list">
-            <div class="measure-card reveal stagger-1">
-              <div class="measure-num">1</div>
-              <div class="measure-content">
-                <h4>Immediate Water Shut-Off</h4>
-                <p>If the main shut-off valve is broken or inaccessible, our technician locates and operates the emergency curb stop or street valve to halt water flow immediately. This prevents further flooding while we assess the permanent repair.</p>
-              </div>
-            </div>
-
-            <div class="measure-card reveal stagger-2">
-              <div class="measure-num">2</div>
-              <div class="measure-content">
-                <h4>Emergency Water Extraction</h4>
-                <p>For flooding situations, we deploy industrial extraction equipment to remove standing water before mold growth begins. In Florida's humidity above 70 percent, mold colonization starts within 24 to 48 hours. Fast extraction is critical.</p>
-              </div>
-            </div>
-
-            <div class="measure-card reveal stagger-3">
-              <div class="measure-num">3</div>
-              <div class="measure-content">
-                <h4>Containment and Barriers</h4>
-                <p>Plastic barriers, drop cloths, and containment chambers prevent water and mold spores from spreading to unaffected areas of your home. This is especially critical in slab-on-grade homes where water travels horizontally under concrete.</p>
-              </div>
-            </div>
-
-            <div class="measure-card reveal stagger-4">
-              <div class="measure-num">4</div>
-              <div class="measure-content">
-                <h4>Temporary Pipe Patching</h4>
-                <p>If permanent repair requires parts ordering or next-day scheduling, we install temporary patches or clamps to control the leak until completion. You are never left with an active drip.</p>
-              </div>
-            </div>
-
-            <div class="measure-card reveal stagger-5">
-              <div class="measure-num">5</div>
-              <div class="measure-content">
-                <h4>Dehumidification and Air Circulation</h4>
-                <p>Industrial dehumidifiers and high-velocity air movers reduce ambient humidity and prevent mold growth while permanent repairs are underway. This equipment runs continuously until moisture levels return to safe ranges.</p>
-              </div>
-            </div>
-
-            <div class="measure-card reveal stagger-6">
-              <div class="measure-num">6</div>
-              <div class="measure-content">
-                <h4>Sewage Containment</h4>
-                <p>For sewage backups, we establish containment barriers and apply hospital-grade disinfectants to prevent bacterial contamination spread. Raw sewage is classified as Category 3 contaminated water requiring specialized handling.</p>
-              </div>
-            </div>
-
-            <div class="measure-card reveal stagger-1">
-              <div class="measure-num">7</div>
-              <div class="measure-content">
-                <h4>Insurance Documentation</h4>
-                <p>We photograph and video all damage before cleanup begins. Our reports are formatted for direct insurance submission, including detailed invoices, moisture readings, and restoration timelines. We coordinate directly with your adjuster to simplify claims processing.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="measures-right">
-          <div class="calendar-block reveal-right stagger-2">
-            <h3><i class="fas fa-calendar-alt" style="color: var(--color-primary); margin-right: 0.5rem;"></i> Seasonal Emergency Calendar</h3>
-            <div class="seasonal-grid">
-              <div class="season-card">
-                <h4>Hurricane Season (June through November)</h4>
-                <p>Groundwater inundation, storm sewer overwhelm, and post-flood mold emergencies. Peak season for water damage restoration calls.</p>
-              </div>
-              <div class="season-card alt">
-                <h4>Drought Season</h4>
-                <p>Tree roots aggressively invade sewer lines seeking moisture, causing sudden blockages.</p>
-              </div>
-              <div class="season-card alt2">
-                <h4>Rare Cold Snaps</h4>
-                <p>Uninsulated pipes near the surface burst when temperatures drop, causing widespread emergency calls.</p>
-              </div>
-              <div class="season-card">
-                <h4>Holiday Season (November through January)</h4>
-                <p>Increased usage causes drain clogs, toilet overflows, and garbage disposal failures.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="insurance-badge reveal-right stagger-3">
-            <i class="fas fa-file-shield"></i> Insurance-Ready Documentation Included
-          </div>
-
-          <div class="equipment-block reveal-right stagger-4" style="margin-top: 1rem;">
-            <img src="images/equipment.jpg" alt="Industrial water extraction and dehumidification equipment" loading="lazy">
-            <img src="images/thermal-camera.jpg" alt="Plumber using thermal imaging camera for leak detection" loading="lazy">
-          </div>
-
-          <div class="mold-timer reveal-right stagger-5">
-            <div class="mold-timer-icon">
-              <i class="fas fa-bacterium"></i>
-            </div>
-            <div>
-              <h4>Mold Colonization Window</h4>
-              <p>In Florida's 70%+ humidity, mold begins growing within 24 to 48 hours of water exposure. Fast extraction is critical.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       SECTION 5: DECISION AND CONVERSION BAND
-       ============================================ -->
-  <section class="decision" id="decision">
-    <div class="container">
-      <div class="decision-grid">
-        <div class="decision-left">
-          <h2 class="reveal-left">Why Land O Lakes Homeowners Choose Our Emergency Service</h2>
-
-          <div class="feature-list">
-            <div class="feature-item reveal stagger-1">
-              <div class="feature-check"><i class="fas fa-check"></i></div>
-              <div>
-                <h4>Flat-Rate Pricing Before Work Begins</h4>
-                <p>We present a detailed, flat-rate written estimate with multiple repair options before any work starts. No hourly billing that rewards rushed jobs. No hidden charges when unexpected corrosion is found. If we discover additional damage during inspection, we explain it, show you, and get your signature before proceeding.</p>
-              </div>
-            </div>
-
-            <div class="feature-item reveal stagger-2">
-              <div class="feature-check"><i class="fas fa-check"></i></div>
-              <div>
-                <h4>79-Dollar Inspection Fee</h4>
-                <p>Every emergency diagnostic carries a 79-dollar inspection fee. If you proceed with the repair, that 79 dollars is credited in full to your completed bill. You are never charged twice for the same visit.</p>
-              </div>
-            </div>
-
-            <div class="feature-item reveal stagger-3">
-              <div class="feature-check"><i class="fas fa-check"></i></div>
-              <div>
-                <h4>24/7 Real Person Answer</h4>
-                <p>No call center. No answering service. No voicemail during emergencies. A bilingual team member answers live, triages your situation, and dispatches the nearest technician within 60 to 90 minutes. If we are late, the trip fee is waived.</p>
-              </div>
-            </div>
-
-            <div class="feature-item reveal stagger-4">
-              <div class="feature-check"><i class="fas fa-check"></i></div>
-              <div>
-                <h4>Licensed and Verified Technicians</h4>
-                <p>Every technician is licensed, background-checked, drug-tested, and uniformed with ID badge. You know exactly who is entering your home. We are not a fly-by-night operation. We are fully insured and bonded, license CFC 1430728.</p>
-              </div>
-            </div>
-
-            <div class="feature-item reveal stagger-5">
-              <div class="feature-check"><i class="fas fa-check"></i></div>
-              <div>
-                <h4>Clean Work Guarantee</h4>
-                <p>Shoe covers, drop cloths, and plastic barriers are standard on every job. We remove all debris, old pipes, and excavated soil. Your home is left spotless, not like a construction zone.</p>
-              </div>
-            </div>
-
-            <div class="feature-item reveal stagger-6">
-              <div class="feature-check"><i class="fas fa-check"></i></div>
-              <div>
-                <h4>Permit Handling Included</h4>
-                <p>We pull all required permits and schedule inspections per Florida Building Code and Pasco County regulations. You never visit a county office.</p>
-              </div>
-            </div>
-
-            <div class="feature-item reveal stagger-1">
-              <div class="feature-check"><i class="fas fa-check"></i></div>
-              <div>
-                <h4>48-Hour Follow-Up</h4>
-                <p>After every emergency repair, we call within 48 hours to confirm satisfaction and verify no recurrence. Your warranty documentation and insurance-ready invoice are provided before we leave.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="license-badge reveal stagger-2">
-            <i class="fas fa-id-card"></i> License CFC 1430728
-          </div>
-        </div>
-
-        <div class="decision-right">
-          <div class="faq-block">
-            <h3 class="reveal-right stagger-1"><i class="fas fa-circle-question" style="color: var(--color-primary); margin-right: 0.4rem;"></i> Featured Snippet Q&amp;A</h3>
-
-            <div class="faq-accordion">
-              <div class="faq-item reveal-right stagger-2">
-                <button class="faq-question" aria-expanded="false">
-                  <h4>How much does an emergency plumber cost in Land O Lakes?</h4>
-                  <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                  <p>Suncoast Plumbing charges a 79-dollar inspection fee that credits to your repair. We provide flat-rate estimates upfront with multiple repair options before any work begins.</p>
-                </div>
-              </div>
-
-              <div class="faq-item reveal-right stagger-3">
-                <button class="faq-question" aria-expanded="false">
-                  <h4>What should I do while waiting for the emergency plumber?</h4>
-                  <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                  <p>Shut off the main water supply if safe. If the valve is broken, call us immediately at 727-453-8900 and we will guide you to the street curb stop. Move valuables away from water and do not use electrical devices near standing water.</p>
-                </div>
-              </div>
-
-              <div class="faq-item reveal-right stagger-4">
-                <button class="faq-question" aria-expanded="false">
-                  <h4>Do you handle sewage backup emergencies in Pasco County?</h4>
-                  <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                  <p>Yes. Sewage backup is a critical health hazard. We answer 24/7, dispatch within 60 to 90 minutes, and use containment barriers and hospital-grade disinfectants to prevent contamination spread.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Final CTA -->
-          <div class="final-cta reveal stagger-4">
-            <h3>Call Now for Immediate Emergency Dispatch</h3>
-            <p>Call 727-453-8900 now for immediate emergency dispatch. If this is not an active emergency, schedule your 79-dollar inspection online and we will credit it to your repair.</p>
-            <div class="final-cta-buttons">
-              <a href="tel:727-453-8900" class="btn btn-primary btn-lg">
-                <i class="fas fa-phone"></i> Call 727-453-8900
-              </a>
-              <a href="contact-us.html" class="btn btn-white btn-lg">
-                <i class="fas fa-calendar-check"></i> Schedule Inspection
-              </a>
-            </div>
-            <div class="trust-seals">
-              <span class="trust-seal"><i class="fas fa-certificate"></i> Licensed</span>
-              <span class="trust-seal"><i class="fas fa-shield-halved"></i> Insured</span>
-              <span class="trust-seal"><i class="fas fa-user-check"></i> Background-Checked</span>
-              <span class="trust-seal"><i class="fas fa-broom"></i> Clean Work Guaranteed</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       FIXED BOTTOM CTA BAR (Mobile Only)
-       ============================================ -->
-  <div class="fixed-cta-bar">
-    <a href="tel:727-453-8900" class="btn btn-primary">
-      <i class="fas fa-phone"></i> Call 727-453-8900 — Emergency Dispatch
-    </a>
   </div>
+</section>
 
-  <!-- ============================================
-       JAVASCRIPT
-       ============================================ -->
-  <script>
-    // ============================================
-    // MOBILE MENU TOGGLE
-    // ============================================
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const hamburgerIcon = document.getElementById('hamburgerIcon');
-    const mobileDropdownToggle = document.getElementById('mobileDropdownToggle');
-    const mobileSubmenu = document.getElementById('mobileSubmenu');
+</main>
 
-    hamburgerBtn.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('open');
-      hamburgerBtn.setAttribute('aria-expanded', isOpen);
-      hamburgerIcon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
-    });
+<!-- ============================================
+     SECTION 7: FOOTER NAP BAND
+     ============================================ -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <p><strong>Suncoast Plumbing of Florida, Inc</strong></p>
+        <p>10568 N Statue Pt Dunnellon, FL 34433</p>
+        <a href="tel:727-453-8900" class="footer-phone">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          727-453-8900
+        </a>
+        <span class="license-display">License: CFC 1430728</span>
+        <p style="margin-top:8px;">Fully insured and bonded. Family-owned since 2021.</p>
+      </div>
 
-    mobileDropdownToggle.addEventListener('click', () => {
-      const isOpen = mobileSubmenu.classList.toggle('open');
-      mobileDropdownToggle.classList.toggle('active', isOpen);
-      mobileDropdownToggle.setAttribute('aria-expanded', isOpen);
-    });
+      <div class="footer-col">
+        <h4>Quick Navigation — Services</h4>
+        <ul>
+          <li><a href="emergency-plumbing.html">Emergency Plumbing</a></li>
+          <li><a href="leak-detection.html">Leak Detection</a></li>
+          <li><a href="drain-cleaning.html">Drain Cleaning</a></li>
+          <li><a href="sewer-line-repair.html">Sewer Line Repair</a></li>
+          <li><a href="water-heater-repair.html">Water Heater Repair</a></li>
+          <li><a href="water-heater-installation.html">Water Heater Installation</a></li>
+          <li><a href="pipe-repair.html">Pipe Repair</a></li>
+          <li><a href="toilet-repair.html">Toilet Repair</a></li>
+          <li><a href="repiping.html">Repiping</a></li>
+          <li><a href="hydro-jetting.html">Hydro Jetting</a></li>
+          <li><a href="water-damage-restoration.html">Water Damage Restoration</a></li>
+          <li><a href="septic-tank-pumping.html">Septic Tank Pumping</a></li>
+          <li><a href="water-softener-installation.html">Water Softener Installation</a></li>
+          <li><a href="water-filtration-installation.html">Water Filtration Installation</a></li>
+          <li><a href="gas-line-repair.html">Gas Line Repair</a></li>
+        </ul>
+      </div>
 
-    // ============================================
-    // ACCORDION FUNCTIONALITY
-    // ============================================
-    function setupAccordion(headers, cardSelector, bodySelector) {
-      headers.forEach(header => {
-        header.addEventListener('click', () => {
-          const card = header.closest(cardSelector);
-          const isOpen = card.classList.contains('open');
+      <div class="footer-col">
+        <h4>Quick Navigation — Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="service-areas.html">Service Areas</a></li>
+          <li><a href="financing.html">Financing</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="#schedule">Schedule Inspection</a></li>
+          <li><a href="tel:727-453-8900">Emergency Line</a></li>
+        </ul>
+      </div>
 
-          // Close siblings (only one open at a time within same container)
-          const siblings = card.parentElement.querySelectorAll(cardSelector);
-          siblings.forEach(s => {
-            s.classList.remove('open');
-            const btn = s.querySelector('button');
-            if (btn) btn.setAttribute('aria-expanded', 'false');
-          });
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul class="hours-list">
+          <li><span>Monday - Friday</span> <span>8:00am - 6:00pm by appointment</span></li>
+          <li><span>Saturday - Sunday</span> <span>Closed</span></li>
+          <li><span class="emergency">Emergency</span> <span class="emergency">24/7 same-day service available for urgent plumbing issues</span></li>
+        </ul>
+      </div>
+    </div>
 
-          if (!isOpen) {
-            card.classList.add('open');
-            header.setAttribute('aria-expanded', 'true');
-          }
-        });
-      });
+    <div class="footer-bottom">
+      <p>© Suncoast Plumbing of Florida, Inc. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<!-- ============================================
+     SCRIPTS
+     ============================================ -->
+<script>
+// Mobile menu toggle
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('open');
+});
+
+// Back to top
+const backToTop = document.getElementById('backToTop');
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Form toast
+const form = document.getElementById('contactForm');
+const toast = document.getElementById('toast');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  toast.style.display = 'block';
+  setTimeout(() => { toast.style.display = 'none'; }, 4000);
+});
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animationPlayState = 'running';
     }
+  });
+}, { threshold: 0.1 });
 
-    // Section 2 accordion cards
-    setupAccordion(
-      document.querySelectorAll('.landscape .accordion-header'),
-      '.accordion-card',
-      '.accordion-body'
-    );
-
-    // Section 5 FAQ accordion
-    setupAccordion(
-      document.querySelectorAll('.faq-question'),
-      '.faq-item',
-      '.faq-answer'
-    );
-
-    // ============================================
-    // MOBILE EMERGENCY CARDS (Section 3)
-    // ============================================
-    setupAccordion(
-      document.querySelectorAll('.emergency-card-mobile .mobile-card-header'),
-      '.emergency-card-mobile',
-      '.mobile-card-body'
-    );
-
-    // Toggle mobile vs desktop emergency cards
-    function toggleEmergencyCards() {
-      const desktopGrid = document.querySelector('.emergency-grid');
-      const mobileContainer = document.getElementById('emergencyMobile');
-      if (window.innerWidth <= 767) {
-        desktopGrid.style.display = 'none';
-        mobileContainer.style.display = 'block';
-      } else {
-        desktopGrid.style.display = 'grid';
-        mobileContainer.style.display = 'none';
-      }
-    }
-    toggleEmergencyCards();
-    window.addEventListener('resize', toggleEmergencyCards);
-
-    // ============================================
-    // INTERSECTION OBSERVER — REVEAL ANIMATIONS
-    // ============================================
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.15
-    };
-
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
-      revealObserver.observe(el);
-    });
-
-    // ============================================
-    // GAUGE ANIMATION
-    // ============================================
-    const gaugeWrapper = document.getElementById('gaugeWrapper');
-    if (gaugeWrapper) {
-      const gaugeObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.querySelector('.gauge-circle').classList.add('in-view');
-            gaugeObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.5 });
-      gaugeObserver.observe(gaugeWrapper);
-    }
-
-    // ============================================
-    // TIMELINE FILL ANIMATION
-    // ============================================
-    const timelineFill = document.getElementById('timelineFill');
-    if (timelineFill) {
-      const timelineObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            timelineFill.classList.add('visible');
-            timelineObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.3 });
-      timelineObserver.observe(timelineFill.parentElement);
-    }
-
-    // ============================================
-    // SMOOTH SCROLL FOR ANCHOR LINKS
-    // ============================================
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        if (href === '#') return;
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          const headerHeight = document.querySelector('.header-sticky').offsetHeight;
-          const top = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-          window.scrollTo({ top, behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
+document.querySelectorAll('.animate').forEach(el => {
+  el.style.animationPlayState = 'paused';
+  observer.observe(el);
+});
+</script>
 
 </body>
 </html>
